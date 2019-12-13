@@ -1,0 +1,40 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Health Knowledgebase"
+    include templates/head
+    link(rel='stylesheet', href='./assets/js/libs/Tipr/tipr.css')
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .full_width_photo(style="background-image: url('./assets/images/slider-9.jpg')")
+            .hgroup
+              .title.diagonal-bgcolor-trans
+                .container
+                  h1 Our Health Knowledge Base
+              .subtitle.body-bg_section
+                .container    
+                  p.uppercase Curated by our top doctors and staff.
+      .main
+        section.particles-js-animate
+          .container
+            include templates/knowledgebase
+      include templates/footer
+    include templates/scripts
+
+    // =========================== EXTRA LIBRARIES ==========================
+
+    script(src='./assets/js/libs/Tipr/tipr.min.js')
+    script.
+      jQuery(".knowledgebase li > a").tipr({
+        speed : 400,
+        style : "dark",     // dark|light
+        mode  : "top"    // top|bottom
+      });

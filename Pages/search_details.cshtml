@@ -1,0 +1,181 @@
+﻿@page "{id?}"
+@model HospitalOpenings.Pages.search_detailsModel
+@{
+    ViewData["Title"] = @Model.title;
+}
+
+<div class="brand-colors"></div>
+
+<div class="head_panel parallax-window">
+    <div style="background-image: url('./assets/images/slider-5.jpg')" class="full_width_photo">
+        <div class="hgroup">
+            <div class="title diagonal-bgcolor-trans">
+                <div class="container">
+                    <h1>Hospital Jobs and Info</h1>
+                </div>
+            </div>
+            <div class="subtitle body-bg_section">
+                <div class="container">
+                    <p class="uppercase">Available States and Areas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+
+    @if (Model.Data != null)
+    {
+        @foreach (var item in Model.Data)
+        {
+            <section>
+                <div class="container">
+                    <div class="col-md-12 section_header fancy centered">
+
+                        <h2>@item.HospitalName</h2>
+                        <p class="uppercase">located in the city of @item.City, state of @item.State</p>
+                        <p class="uppercase"><a href="javascript:history.back()" class="btn btn-sm btn-primary">Go Back</a>
+                    </div>
+
+                    <!-- END========================= SERVICES ========================-->
+                </div>
+
+
+                <div class="container">
+                    <!-- ===================== LIST GROUPS ====================-->
+                    <div class="col-lg-12">
+                        <h2>@item.HospitalName Details</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">@item.Address</a>
+                                <a href="#" class="list-group-item">@item.City @item.State @item.ZIPCode</a>
+                                <a href="#" class="list-group-item">@item.CountyName</a>
+                                <a href="#" class="list-group-item">Urgent Care In - @item.PhoneNumber</a>
+                                <a href="#" class="list-group-item">Job Information - @item.PhoneNumber</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">Hospital Type - @item.HospitalType</a>
+                                <a href="#" class="list-group-item">Hospital Ownership - @item.HospitalType</a>
+                                <a href="#" class="list-group-item">Emergency Services - @item.EmergencyServices</a>
+                                <a href="#" class="list-group-item">Meets Criteria For Use Of EHRs - @item.MeetsCriteriaForMeaningfulUseOfEHRs</a>
+                                <a href="#" class="list-group-item">Hospital Overall Rating - @item.Hospitaloverallrating</a>
+                                <a href="#" class="list-group-item">Mortality National Comparison - @item.MortalityNationalComparison</a>
+                                <a href="#" class="list-group-item">
+                                    Safety Of Care National Comparison
+                                    - @item.SafetyOfCareNationalComparison
+                                    <a href="#" class="list-group-item">Patient Experience National Comparison - @item.PatientExperienceNationalComparison</a>
+                                    <a href="#" class="list-group-item">Effectiveness Of CareNational Comparison - @item.EffectivenessOfCareNationalComparison</a>
+                                    <a href="#" class="list-group-item">Efficient Use Of Medical Imaging National Comparison	 - @item.EfficientUseOfMedicalImagingNationalComparison</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bs-component">
+                            <div class="list-group">
+                                <a class="list-group-item active">
+                                    <h4 class="list-group-item-heading">Payment and Value of Care Hospital</h4>
+                                    <p class="list-group-item-text">Payment Measure Name - @item.PaymentMeasureName</p>
+                                </a>
+                                <a class="list-group-item">
+                                    <h4 class="list-group-item-heading">Average Monthly Payment</h4>
+                                    <p class="list-group-item-text">@item.Payment</p>
+                                </a>
+                                <a class="list-group-item">
+                                    <h4 class="list-group-item-heading">Value Of Care Display Name</h4>
+                                    <p class="list-group-item-text">@item.ValueOfCareDisplayName</p>
+                                </a>
+                                <a class="list-group-item">
+                                    <h4 class="list-group-item-heading">Value Of Care Category</h4>
+                                    <p class="list-group-item-text">@item.ValueOfCareCategory</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- END========================= SERVICES ========================-->
+                    </div>
+                </div>
+            </section>
+        }
+    }
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-test.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Nursing Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        Registered nurses (RNs) care for patients by treating and educating them about various medical ailments. The largest group of RNs work as staff nurses in hospitals
+
+                                    </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="services.html"><img src="./assets/images/strive-lungs.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Doctor Jobs </h4>
+                                </div>
+                                <div class="desc">
+                                    <p>From 2014 to 2024, the U.S. Bureau of Labor Statistics (BLS) expected job opportunities for physicians and surgeons to increase by 14%, much faster than that of most other occupations </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>MORE</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="services.html"><img src="./assets/images/strive-cardiology.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Pharmacy Tech Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>Work under the supervision of a licensed pharmacist and are responsible for dispensing medications. Training for a pharmacy technician job is available. </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-dna.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Entry Level Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>There are several options for behind the scene entry level medical jobs that require varying levels of education and range in their required duties. </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

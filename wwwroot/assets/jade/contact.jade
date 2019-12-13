@@ -1,0 +1,60 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var googleMaps      = true
+- var newsletter      = true     
+- var appointmentForm = true
+- var contactForm     = true
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Contact us"
+    include templates/head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .map#map
+        .hgroup
+          .title.diagonal-bgcolor-trans
+            .container
+              h1 Contact
+          .subtitle.body-bg_section
+            .container    
+              p.uppercase Don't hesitate to contact us!
+      .main
+        section
+          .container  
+            .row
+              .col-md-4.light_section.boxed.same_height_col
+                h3.col_header.centered QUICK CONTACT
+                include templates/contact-quick
+              .col-md-4.secondary_section.boxed
+                h3.col_header.centered APPOINTMENT
+                include templates/contact-appointment
+              .col-md-4.skincolored_section.boxed.same_height_col.centered
+                //h3.col_header.centered Medicus
+                img(src="./assets/images/medicus-header-logo-x64.png", alt="logo", height="33")
+                h4 <strong>Customer Support</strong>
+                p <strong>support@medic.us</strong>
+                h4 <strong>Sales Questions</strong>
+                p sales@medic.us
+                h4 <strong>Phones</strong>
+                p 1-800-123-MEDICUS<br>1-800-123-456-789
+                br
+                a.btn.btn-secondary(href='#') EMAIL US
+
+        section.skincolored_section
+          .container
+            .row
+              .col-md-12.section_header.centered
+                h2 GRAB OUR <strong>HEALTH</strong> NEWSLETTER
+                p subscribe to our awesome <strong>mailchimp.com</strong> list
+              .col-md-12.centered  
+                include templates/newsletter
+      include templates/footer
+    include templates/scripts

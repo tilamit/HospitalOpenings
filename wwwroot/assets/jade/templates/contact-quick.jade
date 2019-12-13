@@ -1,0 +1,27 @@
+
+// =========================  QUICK CONTACT FORM ========================
+
+.contact-quick
+  .screen-reader-response
+  form#contact_form(name='contact_form', action='#', method='post', novalidate='novalidate')
+    input.contact_type(type='hidden' name='contact_type' value='appointment_form')
+    span.your-name
+      input.name.form-control(type='text', name='name', value='Full Name', size='40', aria-required='true', aria-invalid='false')
+    span.your-phone
+      input.phone.form-control(type='text', name='phone', value='Phone Number', size='40', aria-required='true', aria-invalid='false')
+    span.your-email
+      input.email.form-control(type='email', name='email', value='Email', size='40', aria-required='true', aria-invalid='false')
+    span.your-subject
+      input.subject.form-control(type='text', name='subject', value='Subject', size='40', aria-required='true', aria-invalid='false')
+    span.your-message
+      textarea.message.form-control(name='message', cols='40', rows='4', aria-invalid='false') Message
+    .captcha
+      .captcha-code(style="background-image:url('./assets/php/contact/captcha.php')")
+      input.captchainput.form-control(type='text', name='captchainput', value='Enter Code', aria-required='true', aria-invalid='false')
+    input.submit_btn.btn.btn-primary(type='submit', name='submit', value='Submit')
+    .notice.btn.btn-metro.alert.alert-warning.alert-dismissable.hidden
+    img.ajax-loader.not_visible(src='./assets/images/ajax-loader.gif', alt='Sending ...')
+// /.contact-quick
+
+// =========================  QUICK CONTACT FORM ========================
+

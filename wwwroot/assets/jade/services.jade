@@ -1,0 +1,61 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var beforeAfter = true
+- var owlSlider   = true
+- var parallax    = true
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Our Services"
+    include templates/head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .full_width_photo.parallax-window(style="background-image: url('./assets/images/slider-4.jpg')")
+            .hgroup
+              .title.diagonal-bgcolor-trans
+                .container
+                  h1 Services
+              .subtitle.body-bg_section
+                .container    
+                  p.uppercase Personalized patient care 
+      .main
+        section
+          .container
+            .row
+              include templates/flat-selectors
+        
+        section.vcenter.no_top_padding
+          .container
+            .row
+              include templates/image-compare
+                
+        section.secondary_section#timetables
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 Doctor's Timetables
+                p.uppercase Find out when you can make an appointment with your Doctor
+              .col-md-12  
+                include templates/timetable-large 
+
+        section.skincolored_section
+          .container
+            .row
+              .col-md-12
+                .section_header.fancy.centered 
+                  h2 Testimonials
+                  p Our Patients are satisfied
+            .row
+              .col-md-8.col-md-offset-2  
+                include templates/testimonial-slider        
+                
+      include templates/footer
+
+    include templates/scripts

@@ -1,0 +1,96 @@
+
+// ======================= PORTFOLIO ======================
+
+.portfolio_grid
+  ul#filt_medicus.portfolio_filters
+    li
+      a.active(href='#', data-filter='*') Show All
+    li
+      a(href='#', data-filter='.images') Images
+    li
+      a(href='#', data-filter='.videos') Videos
+    li
+      a(href='#', data-filter='.pages') External Pages  
+  #cont_medicus.row.isotope_portfolio_container.isotope
+
+    // ================= PORTFOLIO ITEM #1 (Image) ================
+
+    .images.col-xs-12.col-sm-6.col-md-6
+      .portfolio_item.stretchy-wrapper.ratio_2-1
+        a.lightbox_gallery(href='./assets/images/video-007.jpg')
+          .figure(style='background-image:url(./assets/images/video-007.jpg)')
+          .portfolio_title.skincolored_section 
+            h3 
+              i.fa.fa-image
+              |  Dietary Advice  
+          .portfolio_description.skincolored_section.degrade
+            p Health care (or healthcare) is the diagnosis, treatment, and prevention of disease, illness, injury, and other physical and mental impairments in human beings.
+          
+
+    // ================= PORTFOLIO ITEM #2 (YouTube video) ================
+
+    .videos.col-xs-12.col-sm-6.col-md-6
+      .portfolio_item.stretchy-wrapper.ratio_2-1
+        a.lightbox_gallery(href='https://www.youtube.com/watch?v=30uTT3SsPzA')
+          .figure(style='background-image:url(./assets/images/video-001.jpg)')
+          .portfolio_title.skincolored_section 
+            h3 
+              i.fa.fa-youtube
+              |  Practitioners' Advice  
+          .portfolio_description.skincolored_section.degrade
+            p The practice of medicine entails more than just good communication, but good communication is essential to effective practice.
+
+    // ================= PORTFOLIO ITEM #3 (Vimeo video) ================
+
+    .videos.col-xs-12.col-sm-6.col-md-6
+      .portfolio_item.stretchy-wrapper.ratio_2-1
+        a.lightbox_gallery(href='https://vimeo.com/87309145')
+          .figure(style='background-image:url(./assets/images/video-003.jpg)')
+          .portfolio_title.skincolored_section 
+            h3 
+              i.fa.fa-vimeo-square
+              |  Meet our Veterinaries  
+          .portfolio_description.skincolored_section.degrade
+            p Health care (or healthcare) is the diagnosis, treatment, and prevention of disease, illness, injury, and other physical and mental impairments in human beings.
+
+    // ================= PORTFOLIO ITEM #4 (DailyMotion video) ================
+
+    .videos.col-xs-12.col-sm-6.col-md-6
+      .portfolio_item.stretchy-wrapper.ratio_2-1
+        a.lightbox_gallery(href='http://www.dailymotion.com/video/x2gryoe_health-tips-and-benefits_people')
+          .figure(style='background-image:url(./assets/images/video-004.jpg)')
+          .portfolio_title.skincolored_section 
+            h3 
+              i.fa.fa-youtube-play
+              |  Labs Walkthrough  
+          .portfolio_description.skincolored_section.degrade
+            p The practice of medicine entails more than just good communication, but good communication is essential to effective practice.
+
+    // ================= PORTFOLIO ITEM #5 (External Link) ================
+
+    .pages.col-xs-12.col-sm-6.col-md-6
+      .portfolio_item.stretchy-wrapper.ratio_2-1
+        a(href='knowledgebase-article.html', target='_blank')
+          .figure(style='background-image:url(./assets/images/video-005.jpg)')
+          .portfolio_title.skincolored_section 
+            h3 
+              i.fa.fa-heartbeat
+              |  Top Health Tips  
+          .portfolio_description.skincolored_section.degrade
+            p Health care (or healthcare) is the diagnosis, treatment, and prevention of disease, illness, injury, and other physical and mental impairments in human beings.
+
+    // ================= PORTFOLIO ITEM #6 ================
+
+    .images.col-xs-12.col-sm-6.col-md-6
+      .portfolio_item.stretchy-wrapper.ratio_2-1
+        a.lightbox_gallery(href='./assets/images/video-002.jpg')
+          .figure(style='background-image:url(./assets/images/video-002.jpg)')
+          .portfolio_title.skincolored_section 
+            h3 
+              i.fa.fa-image
+              |  Health Check 101  
+          .portfolio_description.skincolored_section.degrade
+            p A physical examination is a routine test your doctor performs to check your overall healths.
+
+
+// END==================== PORTFOLIO ======================

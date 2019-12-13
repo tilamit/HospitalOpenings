@@ -1,0 +1,1109 @@
+﻿@page
+@model HospitalOpenings.Pages.states_citiesModel
+@{
+    ViewData["Title"] = "State and Cities |";
+}
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<div class="brand-colors"></div>
+
+<div class="head_panel parallax-window">
+    <div style="background-image: url('./assets/images/slider-4.jpg')" class="full_width_photo">
+        <div class="hgroup">
+            <div class="title diagonal-bgcolor-trans">
+                <div class="container">
+                    <h1>Hospital Jobs and Info</h1>
+                </div>
+            </div>
+            <div class="subtitle body-bg_section">
+                <div class="container">
+                    <p class="uppercase">Available States and Areas</p>
+                    <p class="uppercase"><a href="javascript:history.back()" class="btn btn-sm btn-primary">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <section>
+        <div class="container">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="column" style="background-color:#eef3f6;">
+
+
+                                <h4>Alabama</h4><a name=AL></a>
+                                <a href="search_details.aspx?cities=Auburn">Auburn</a><br />
+                                <a href="search_details.aspx?cities=Birmingham">Birmingham</a><br />
+                                <a href="search_details.aspx?cities=Dothan">Dothan</a><br />
+                                <a href="search_details.aspx?cities=Gadsden">Gadsden</a><br />
+                                <a href="search_details.aspx?cities=Huntsville">Huntsville</a><br />
+                                <a href="search_details.aspx?cities=Mobile">Mobile</a><br />
+                                <a href="search_details.aspx?cities=Montgomery">Montgomery</a><br />
+                                <a href="search_details.aspx?cities=Shoals">Shoals</a><br />
+                                <a href="search_details.aspx?cities=Tuscaloosa">Tuscaloosa</a>
+
+
+                                <h4>Alaska</h4><a name=AK></a>
+                                <a href="search_details.aspx?cities=Anchorage">Anchorage</a><br />
+
+                                <h4>Arizona</h4><a name=AZ></a>
+                                <a href="search_details.aspx?cities=Flagstaff">Flagstaff</a><br />
+                                <a href="search_details.aspx?cities=Mohave">Mohave</a><br />
+                                <a href="search_details.aspx?cities=Central">Phoenix</a><br />
+                                <a href="search_details.aspx?cities=Prescott">Prescott</a><br />
+                                <a href="search_details.aspx?cities=Show low">Showlow</a><br />
+                                <a href="search_details.aspx?cities=Sierra Vista">Sierra Vista</a><br />
+                                <a href="search_details.aspx?cities=Tucson">Tucson</a><br />
+                                <a href="search_details.aspx?cities=Yuma">Yuma</a><br />
+
+                                <h4>Arkansas</h4><a name=AR></a>
+                                <a href="search_details.aspx?cities=Auburn">Auburn</a><br />
+                                <a href="search_details.aspx?cities=Fort Smith">Fort Smith</a><br />
+                                <a href="search_details.aspx?cities=Jonesboro">Jonesboro</a><br />
+                                <a href="search_details.aspx?cities=Little Rock">Little Rock</a>
+
+
+                                <h4>California</h4><a name=CA></a>
+                                <a href="search_details.aspx?cities=Bakersfield">Bakersfield</a><br />
+                                <a href="search_details.aspx?cities=Chico">Chico</a><br />
+                                <a href="search_details.aspx?cities=East Bay">East Bay</a><br />
+                                <a href="search_details.aspx?cities=Fresno">Fresno</a><br />
+                                <a href="search_details.aspx?cities=Humboldt County">Humboldt County</a><br />
+                                <a href="search_details.aspx?cities=Inland Empire">Inland Empire</a><br />
+                                <a href="search_details.aspx?cities=Long Beach">Long Beach</a><br />
+                                <a href="search_details.aspx?cities=Los Angeles">Los Angeles</a><br />
+                                <a href="search_details.aspx?cities=Mendocino">Mendocino</a><br />
+                                <a href="search_details.aspx?cities=Merced">Merced</a><br />
+                                <a href="search_details.aspx?cities=Modesto">Modesto</a><br />
+                                <a href="search_details.aspx?cities=Monterey">Monterey</a><br />
+                                <a href="search_details.aspx?cities=Orange County">Orange County</a><br />
+                                <a href="search_details.aspx?cities=Oakland">Oakland</a><br />
+                                <a href="search_details.aspx?cities=Palm Springs">Palm Springs</a><br />
+                                <a href="search_details.aspx?cities=Palmdale">Palmdale</a><br />
+                                <a href="search_details.aspx?cities=Redding">Redding</a><br />
+                                <a href="search_details.aspx?cities=Riverside">Riverside</a><br />
+                                <a href="search_details.aspx?cities=Sacramento">Sacramento</a><br />
+                                <a href="search_details.aspx?cities=San Bernardino">San Bernardino</a><br />
+                                <a href="search_details.aspx?cities=San Diego">San Diego</a>
+                                <a href="search_details.aspx?cities=San Fernando">San Fernando</a>
+                                <a href="search_details.aspx?cities=San Francisco">San Francisco</a><br />
+                                <a href="search_details.aspx?cities=San Jose">San Jose</a><br />
+                                <a href="search_details.aspx?cities=San Luis Obispo">San Luis Obispo</a><br />
+                                <a href="search_details.aspx?cities=Santa Barbara">Santa Barbara</a><br />
+                                <a href="search_details.aspx?cities=Santa Cruz">Santa Cruz</a><br />
+                                <a href="search_details.aspx?cities=Santa Maria">Santa Maria</a><br />
+                                <a href="search_details.aspx?cities=Siskiyou">Siskiyou</a><br />
+                                <a href="search_details.aspx?cities=Stockton">Stockton</a><br />
+                                <a href="search_details.aspx?cities=Susanville">Susanville</a><br />
+                                <a href="search_details.aspx?cities=Ventura">Ventura</a><br />
+                                <a href="search_details.aspx?cities=Visalia">Visalia</a>
+
+
+                                <h4>Colorado</h4><a name=CO></a>
+                                <a href="search_details.aspx?cities=Colorado">Colorado</a><br />
+                                <a href="search_details.aspx?cities=Boulder">Boulder</a><br />
+                                <a href="search_details.aspx?cities=Colorado Springs">Colorado Springs</a><br />
+                                <a href="search_details.aspx?cities=Denver">Denver</a><br />
+                                <a href="search_details.aspx?cities=Fort Collins">Fort Collins</a><br />
+                                <a href="search_details.aspx?cities=Pueblo">Pueblo</a><br />
+                                <a href="search_details.aspx?cities=Rockies">Rockies</a><br />
+                                <a href="search_details.aspx?cities=West Slope">West Slope</a>
+
+                                <h4>Connecticut</h4><a name=CT></a>
+                                <a href="search_details.aspx?cities=Connecticut">Connecticut</a><br />
+                                <a href="search_details.aspx?cities=Eastern Connecticut">Eastern Connecticut</a><br />
+                                <a href="search_details.aspx?cities=Hartford">Hartford</a><br />
+                                <a href="search_details.aspx?cities=New Haven">New Haven</a><br />
+                                <a href="search_details.aspx?cities=Northwest Connecticut">Northwest Connecticut</a>
+
+                                <h4>Delaware</h4><a name=DE></a>
+                                <a href="search_details.aspx?cities=delaware">Delaware</a>
+
+                                <h4>DC</h4><a name=DC></a>
+                                <a href="search_details.aspx?cities=District of Columbia">District of Columbia</a><br />
+                                <a href="search_details.aspx?cities=Northern Virginia">Northern Virginia</a><br />
+                                <a href="search_details.aspx?cities=Southern Maryland">Southern Maryland</a><br />
+                                <a href="search_details.aspx?cities=Washington D.C.">Washington DC</a>
+
+                                <h4>Florida</h4><a name=FL></a>
+                                <p>
+                                    <a href="search_details.aspx?cities=Daytona">Daytona</a><br />
+                                    <a href="search_details.aspx?cities=Fort Myers">Fort Myers</a><br />
+                                    <a href="search_details.aspx?cities=Ft Lauderdale">Ft Lauderdale</a><br />
+                                    <a href="search_details.aspx?cities=Gainesville">Gainesville</a><br />
+                                    <a href="search_details.aspx?cities=Jacksonville">Jacksonville</a><br />
+                                    <a href="search_details.aspx?cities=Keys">Keys</a><br />
+                                    <a href="search_details.aspx?cities=Lakeland">Lakeland</a><br />
+                                    <a href="search_details.aspx?cities=Miami">Miami</a><br />
+                                    <a href="search_details.aspx?cities=Ocala">Ocala</a><br />
+                                    <a href="search_details.aspx?cities=Orlando">Orlando</a><br />
+                                    <a href="search_details.aspx?cities=Panama">Panama City</a><br />
+                                    <a href="search_details.aspx?cities=Pensacola">Pensacola</a><br />
+                                    <a href="search_details.aspx?cities=Sarasota">Sarasota</a><br />
+                                    <a href="search_details.aspx?cities=Space Coast">Space Coast</a><br />
+                                    <a href="search_details.aspx?cities=ST. Augustine">ST. Augustine</a><br />
+                                    <a href="search_details.aspx?cities=Tallahassee">Tallahassee</a><br />
+                                    <a href="search_details.aspx?cities=Tampa">Tampa</a><br />
+                                    <a href="search_details.aspx?cities=Treasure Coast">Treasure Coast</a><br />
+                                    <a href="search_details.aspx?cities=West Palm Beach">West Palm Beach</a>
+                                </p>
+
+                                <h4>Georgia</h4><a name=GA></a>
+                                <a href="search_details.aspx?cities=Georgia">Georgia</a><br />
+                                <a href="search_details.aspx?cities=Atlanta">Atlanta</a><br />
+                                <a href="search_details.aspx?cities=Augusta">Augusta</a><br />
+                                <a href="search_details.aspx?cities=Brunswick">Brunswick</a><br />
+                                <a href="search_details.aspx?cities=Macon">Macon</a><br />
+                                <a href="search_details.aspx?cities=Northwest Georgia">Northwest Georgia</a><br />
+                                <a href="search_details.aspx?cities=Savannah">Savannah</a><br />
+                                <a href="search_details.aspx?cities=Statesboro">Statesboro</a><br />
+                                <a href="search_details.aspx?cities=Valdosta">Valdosta</a>
+
+                                <h4>Hawaii</h4><a name=HI></a>
+                                <p>
+                                    <a href="search_details.aspx?cities=Hawaii">Hawaii</a><br />
+                                    <a href="search_details.aspx?cities=Bigisland">Bigisland</a><br />
+                                    <a href="search_details.aspx?cities=Honolulu">Honolulu</a><br />
+                                    <a href="search_details.aspx?cities=Kauai">Kauai</a><br />
+                                    <a href="search_details.aspx?cities=Maui">Maui</a>
+                                </p>
+
+                                <h4>Idaho</h4><a name=ID></a>
+                                <p>
+                                    <a href="search_details.aspx?cities=Idaho">Idaho</a><br />
+                                    <a href="search_details.aspx?cities=Boise">Boise</a><br />
+                                    <a href="search_details.aspx?cities=East Idaho">East Idaho</a><br />
+                                    <a href="search_details.aspx?cities=Lewiston">Lewiston</a><br />
+                                    <a href="search_details.aspx?cities=Twin Falls">Twin Falls</a>
+                                </p>
+
+                                <h4>Illinois</h4><a name=IL></a>
+                                <p>
+                                    <a href="search_details.aspx?cities=Illinois">Illinois</a><br />
+                                    <a href="search_details.aspx?cities=Bloomington">Bloomington</a><br />
+                                    <a href="search_details.aspx?cities=Carbondale">Carbondale</a><br />
+                                    <a href="search_details.aspx?cities=Chambana">Chambana</a><br />
+                                    <a href="search_details.aspx?cities=Chicago">Chicago</a><br />
+                                    <a href="search_details.aspx?cities=Decatur">Decatur</a><br />
+                                    <a href="search_details.aspx?cities=LaSalle">LaSalle</a><br />
+                                    <a href="search_details.aspx?cities=Mattoon">Mattoon</a><br />
+                                    <a href="search_details.aspx?cities=Peoria">Peoria</a><br />
+                                    <a href="search_details.aspx?cities=Quincy">Quincy</a><br />
+                                    <a href="search_details.aspx?cities=Rockford">Rockford</a>
+                                </p>
+
+                                <h4>Indiana</h4><a name=IN></a>
+                                <a href="search_details.aspx?cities=Bloomington">Bloomington</a><br />
+                                <a href="search_details.aspx?cities=Evansville">Evansville</a><br />
+                                <a href="search_details.aspx?cities=Fort Wayne">Fort Wayne</a><br />
+                                <a href="search_details.aspx?cities=Indianapolis">Indianapolis</a><br />
+                                <a href="search_details.aspx?cities=Kokomo">Kokomo</a><br />
+                                <a href="search_details.aspx?cities=Muncie">Muncie</a><br />
+                                <a href="search_details.aspx?cities=South Bend">South Bend</a><br />
+                                <a href="search_details.aspx?cities=Terre Haute">Terre Haute</a>
+
+
+                                <H4>Iowa</H4><a name=IA></a>
+                                <a href="search_details.aspx?cities=Iowa">Iowa</a><br />
+                                <a href="search_details.aspx?cities=Ames">Ames</a><br />
+                                <a href="search_details.aspx?cities=Cedar Rapids">Cedar Rapids</a><br />
+                                <a href="search_details.aspx?cities=Des Moines">Des Moines</a><br />
+                                <a href="search_details.aspx?cities=Dubuque">Dubuque</a><br />
+                                <a href="search_details.aspx?cities=Fort Dodge">Fort Dodge</a><br />
+                                <a href="search_details.aspx?cities=Iowa City">Iowa City</a><br />
+                                <a href="search_details.aspx?cities=Mason City">Mason City</a><br />
+                                <a href="search_details.aspx?cities=Ottumwa">Ottumwa</a><br />
+                                <a href="search_details.aspx?cities=Quad Cities">Quad Cities</a><br />
+                                <a href="search_details.aspx?cities=Sioux City">Sioux City</a><br />
+                                <a href="search_details.aspx?cities=Waterloo">Waterloo</a>
+
+                                <h4>Kansas</h4><a name=KS></a>
+                                <a href="search_details.aspx?cities=Kansas">Kansas</a><br />
+                                <a href="search_details.aspx?cities=Lawrence">Lawrence</a><br />
+                                <a href="search_details.aspx?cities=Manhattan">Manhattan</a><br />
+                                <a href="search_details.aspx?cities=Salina">Salina</a><br />
+                                <a href="search_details.aspx?cities=Topeka">Topeka</a><br />
+                                <a href="search_details.aspx?cities=Wichita">Wichita</a>
+
+                                <h4>Kentucky</h4><a name=KY></a>
+                                <a href="search_details.aspx?cities=Kentucky">Kentucky</a><br />
+                                <a href="search_details.aspx?cities=Bowling Green">Bowling Green</a><br />
+                                <a href="search_details.aspx?cities=East Kentucky">East Kentucky</a><br />
+                                <a href="search_details.aspx?cities=Lexington">Lexington</a><br />
+                                <a href="search_details.aspx?cities=Louisville">Louisville</a><br />
+                                <a href="search_details.aspx?cities=Owensboro">Owensboro</a><br />
+                                <a href="search_details.aspx?cities=West Kentucky">West Kentucky</a>
+
+
+                                <h4>Louisiana</h4><a name=LA></a>
+                                <a href="search_details.aspx?cities=Louisiana">Louisiana</a><br />
+                                <a href="search_details.aspx?cities=Alexandria">Alexandria</a><br />
+                                <a href="search_details.aspx?cities=Baton Rouge">Baton Rouge</a><br />
+                                <a href="search_details.aspx?cities=Lafayette">Lafayette</a><br />
+                                <a href="search_details.aspx?cities=Lake Charles">Lake Charles</a><br />
+                                <a href="search_details.aspx?cities=New Orleans">New Orleans</a><br />
+                                <a href="search_details.aspx?cities=Shreveport">Shreveport</a>
+
+                                <h4>Maine</h4><a name=ME></a>
+                                <a href="search_details.aspx?cities=Maine">Maine</a><br />
+                                <a href="search_details.aspx?cities=Portsmouth">Portsmouth</a>
+
+                                <H4>Maryland</H4><a name=MD></a>
+                                <a href="search_details.aspx?cities=Maryland">Maryland</a><br />
+                                <a href="search_details.aspx?cities=Annapolis">Annapolis</a><br />
+                                <a href="search_details.aspx?cities=Baltimore">Baltimore</a><br />
+                                <a href="search_details.aspx?cities=Cumberland Valley">Cumberland Valley</a><br />
+                                <a href="search_details.aspx?cities=Eastern Shore">Eastern Shore</a><br />
+                                <a href="search_details.aspx?cities=Frederick">Frederick</a><br />
+                                <a href="search_details.aspx?cities=Western Maryland">Western Maryland</a>
+
+                                <h4>Massachusetts</h4><a name=MA></a>
+                                <a href="search_details.aspx?cities=Massachusetts">Massachusetts</a><br />
+                                <a href="search_details.aspx?cities=Boston">Boston</a><br />
+                                <a href="search_details.aspx?cities=Cape Cod">Cape Cod</a><br />
+                                <a href="search_details.aspx?cities=South Coast">South Coast</a><br />
+                                <a href="search_details.aspx?cities=Springfield">Springfield</a><br />
+                                <a href="search_details.aspx?cities=Worcester">Worcester</a>
+
+                                <h4>Michigan</h4><a name=MI></a>
+                                <a href="search_details.aspx?cities=Michigan">Michigan</a><br />
+                                <a href="search_details.aspx?cities=Ann Arbor">Ann Arbor</a><br />
+                                <a href="search_details.aspx?cities=Battle Creek">Battle Creek</a><br />
+                                <a href="search_details.aspx?cities=Central Michigan">Central Michigan</a><br />
+                                <a href="search_details.aspx?cities=Detroit">Detroit</a><br />
+                                <a href="search_details.aspx?cities=Flint">Flint</a><br />
+                                <a href="search_details.aspx?cities=Grand Rapids">Grand Rapids</a><br />
+                                <a href="search_details.aspx?cities=Holland">Holland</a><br />
+                                <a href="search_details.aspx?cities=Jackson">Jackson</a><br />
+                                <a href="search_details.aspx?cities=Kalamazoo">Kalamazoo</a><br />
+                                <a href="search_details.aspx?cities=Lansing">Lansing</a><br />
+                                <a href="search_details.aspx?cities=Monroe">Monroe</a><br />
+                                <a href="search_details.aspx?cities=Muskegon">Muskegon</a><br />
+                                <a href="search_details.aspx?cities=Northern Michigan">Northern Michigan</a><br />
+                                <a href="search_details.aspx?cities=Port Huron">Port Huron</a><br />
+                                <a href="search_details.aspx?cities=Saginaw">Saginaw</a><br />
+                                <a href="search_details.aspx?cities=Southwest Michigan">Southwest Michigan</a><br />
+                                <a href="search_details.aspx?cities=Upper Peninsula">Upper Peninsula</a>
+
+                                <h4>Minnesota</h4><a name=MN></a>
+                                <a href="search_details.aspx?cities=Minnesota">Minnesota</a><br />
+                                <a href="search_details.aspx?cities=Bemidji">Bemidji</a><br />
+                                <a href="search_details.aspx?cities=Brainerd">Brainerd</a><br />
+                                <a href="search_details.aspx?cities=Duluth">Duluth</a><br />
+                                <a href="search_details.aspx?cities=Mankato">Mankato</a><br />
+                                <a href="search_details.aspx?cities=Minneapolis">Minneapolis</a><br />
+                                <a href="search_details.aspx?cities=St Cloud">St Cloud</a>
+
+                                <h4>Mississippi</h4><a name=MS></a>
+                                <a href="search_details.aspx?cities=Mississippi">Mississippi</a><br />
+                                <a href="search_details.aspx?cities=Biloxia">Biloxia</a><br />
+                                <a href="search_details.aspx?cities=Hattiesburg">Hattiesburg</a><br />
+                                <a href="search_details.aspx?cities=Jackson">Jackson</a><br />
+                                <a href="search_details.aspx?cities=Meridian">Meridian</a><br />
+                                <a href="search_details.aspx?cities=Natchez">Natchez</a><br />
+                                <a href="search_details.aspx?cities=Northern Mississippi">Northern Mississippi</a>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+                            <div class="column" style="background-color:#f6f6f6;">
+
+
+                                <h4>Missouri</h4><a name=MN></a>
+                                <a href="search_details.aspx?cities=Missouri">Missouri</a><br />
+                                <a href="search_details.aspx?cities=Columbia">Columbia</a><br />
+                                <a href="search_details.aspx?cities=Joplin">Joplin</a><br />
+                                <a href="search_details.aspx?cities=Kansas City">Kansas City</a><br />
+                                <a href="search_details.aspx?cities=Kirksville">Kirksville</a><br />
+                                <a href="search_details.aspx?cities=Lake Of The Ozarks">Lake Of The Ozarks</a><br />
+                                <a href="search_details.aspx?cities=Southeast Missouri">Southeast Missouri</a><br />
+                                <a href="search_details.aspx?cities=Springfield">Springfield</a><br />
+                                <a href="search_details.aspx?cities=St. Joseph">St Joseph</a><br />
+                                <a href="search_details.aspx?cities=St. Louis">St Louis</a><br />
+                                <a href="search_details.aspx?cities=Montanad">Montana</a><br />
+                                <a href="search_details.aspx?cities=Billings">Billings</a><br />
+                                <a href="search_details.aspx?cities=Bozeman">Bozeman</a><br />
+                                <a href="search_details.aspx?cities=Butte">Butte</a><br />
+                                <a href="search_details.aspx?cities=Great Falls">Great Falls</a><br />
+                                <a href="search_details.aspx?cities=Helena">Helena</a><br />
+                                <a href="search_details.aspx?cities=Kalispell">Kalispell</a><br />
+                                <a href="search_details.aspx?cities=Missoula">Missoula</a> <br />
+
+
+
+                                <H4>Nebraska</H4><a name=NE></a>
+                                <a href="search_details.aspx?cities=Nebraska">Nebraska</a><br />
+                                <a href="search_details.aspx?cities=Grand Island">Grand Island</a><br />
+                                <a href="search_details.aspx?cities=Lincoln">Lincoln</a><br />
+                                <a href="search_details.aspx?cities=North Platte">North Platte</a><br />
+                                <a href="search_details.aspx?cities=Omaha">Omaha</a><br />
+                                <a href="search_details.aspx?cities=Scotts Bluff">Scotts Bluff</a>
+
+                                <h4>Nevada</h4><a name=NV></a>
+                                <a href="search_details.aspx?cities=Nevada">Nevada</a><br />
+                                <a href="search_details.aspx?cities=Elko">Elko</a><br />
+                                <a href="search_details.aspx?cities=Las Vegas">Las Vegas</a><br />
+                                <a href="search_details.aspx?cities=Reno">Reno</a>
+
+                                <h4>New Hampshire</h4><a name=NH></a>
+                                <a href="search_details.aspx?cities=New Hampshire">Manchester</a>
+
+                                <h4>New Jersey</h4><a name=NJ></a>
+                                <a href="search_details.aspx?cities=New Jersey">New Jersey</a><br />
+                                <a href="search_details.aspx?cities=Central Jersey">Central Jersey</a><br />
+                                <a href="search_details.aspx?cities=Jersey Shore">Jersey Shore</a><br />
+                                <a href="search_details.aspx?cities=North Jersey">North Jersey</a><br />
+                                <a href="search_details.aspx?cities=South Jersey">South Jersey</a>
+
+                                <h4>New Mexico</h4><a name=NM></a>
+                                <a href="search_details.aspx?cities=New Mexico">New Mexico</a><br />
+                                <a href="search_details.aspx?cities=Albuquerque">Albuquerque</a><br />
+                                <a href="search_details.aspx?cities=Clovis">Clovis</a><br />
+                                <a href="search_details.aspx?cities=Farmington">Farmington</a><br />
+                                <a href="search_details.aspx?cities=Las Cruces">Las Cruces</a><br />
+                                <a href="search_details.aspx?cities=Carlsbad">Carlsbad</a><br />
+                                <a href="search_details.aspx?cities=Roswell">Roswell</a><br />
+                                <a href="search_details.aspx?cities=Santafe">Santafe</a><br />
+
+
+                                <h4>New York</h4><a name=NY></a>
+                                <a href="search_details.aspx?cities=Albany">Albany</a><br />
+                                <a href="search_details.aspx?cities=Bronx">Bronx</a><br />
+                                <a href="search_details.aspx?cities=Binghamton">Binghamton</a><br />
+                                <a href="search_details.aspx?cities=Buffalo">Buffalo</a><br />
+                                <a href="search_details.aspx?cities=Catskills">Catskills</a><br />
+                                <a href="search_details.aspx?cities=Chautauqua">Chautauqua</a><br />
+                                <a href="search_details.aspx?cities=Elmira">Elmira</a><br />
+                                <a href="search_details.aspx?cities=Fairfield">Fairfield</a><br />
+                                <a href="search_details.aspx?cities=Finger Lake">Finger Lakes</a><br />
+                                <a href="search_details.aspx?cities=Glens Falls">Glens Falls</a><br />
+                                <a href="search_details.aspx?cities=Hudson Valley">Hudson Valley</a><br />
+                                <a href="search_details.aspx?cities=Ithaca">Ithaca</a><br />
+                                <a href="search_details.aspx?cities=New York">New York</a><br />
+                                <a href="search_details.aspx?cities=Long Island">Long Island</a><br />
+                                <a href="search_details.aspx?cities=Manhattan">Manhattan</a><br />
+                                <a href="search_details.aspx?cities=Oneonta">Oneonta</a><br />
+                                <a href="search_details.aspx?cities=Plattsburgh">Plattsburgh</a><br />
+                                <a href="search_details.aspx?cities=Potsdam">Potsdam</a><br />
+                                <a href="search_details.aspx?cities=Rochester">Rochester</a><br />
+                                <a href="search_details.aspx?cities=Staten Island">Staten Island</a><br />
+                                <a href="search_details.aspx?cities=Syracuse">Syracuse</a><br />
+                                <a href="search_details.aspx?cities=Twintiers">Twintiers</a><br />
+                                <a href="search_details.aspx?cities=Utica">Utica</a><br />
+                                <a href="search_details.aspx?cities=Watertown">Watertown</a><br />
+                                <a href="search_details.aspx?cities=Westchester">Westchester</a> <br />
+
+
+
+                                <h4>North Carolina</h4><a name=NC></a>
+                                <a href="search_details.aspx?cities=North Carolina">North Carolina</a><br />
+                                <a href="search_details.aspx?cities=Asheville">Asheville</a><br />
+                                <a href="search_details.aspx?cities=Boone">Boone</a><br />
+                                <a href="search_details.aspx?cities=Charlotte">Charlotte</a><br />
+                                <a href="search_details.aspx?cities=Eastern">Eastern NC</a><br />
+                                <a href="search_details.aspx?cities=Fayetteville">Fayetteville</a><br />
+                                <a href="search_details.aspx?cities=Greensboro">Greensboro</a><br />
+                                <a href="search_details.aspx?cities=Hickory">Hickory</a><br />
+                                <a href="search_details.aspx?cities=Outer Banks">Outer Banks</a><br />
+                                <a href="search_details.aspx?cities=Raleigh">Raleigh</a><br />
+                                <a href="search_details.aspx?cities=Salem">Salem</a><br />
+                                <a href="search_details.aspx?cities=Wilmington">Wilmington</a><br />
+                                <a href="search_details.aspx?cities=Winston Salem">Winston Salem</a><br />
+
+                                <h4>North Dakota</h4><a name=ND></a>
+                                <a href="search_details.aspx?cities=North Dakota">North Dakota</a>
+                                <a href="search_details.aspx?cities=Bismarck">Bismarck</a>
+                                <a href="search_details.aspx?cities=Fargo">Fargo</a>
+                                <a href="search_details.aspx?cities=Grand Forks">Grand Forks</a>
+                                <a href="search_details.aspx?cities=Minot">Minot</a><br />
+
+                                <H4>Ohio</H4><a name=OH></a>
+                                <a href="search_details.aspx?cities=Ohio">Ohio</a><br />
+                                <a href="search_details.aspx?cities=AkronCanton">Akron</a><br />
+                                <a href="search_details.aspx?cities=Ashtabula">Ashtabula</a><br />
+                                <a href="search_details.aspx?cities=Athens">Athens</a><br />
+                                <a href="search_details.aspx?cities=Chillicothe">Chillicothe</a><br />
+                                <a href="search_details.aspx?cities=Cincinnati">Cincinnati</a><br />
+                                <a href="search_details.aspx?cities=Cleveland">Cleveland</a><br />
+                                <a href="search_details.aspx?cities=Columbus">Columbus</a><br />
+                                <a href="search_details.aspx?cities=Dayton">Dayton</a><br />
+                                <a href="search_details.aspx?cities=Lima">Lima</a><br />
+                                <a href="search_details.aspx?cities=Mansfield">Mansfield</a><br />
+                                <a href="search_details.aspx?cities=Sandusky">Sandusky</a><br />
+                                <a href="search_details.aspx?cities=Toledo">Toledo</a><br />
+                                <a href="search_details.aspx?cities=Tuscarawas County">Tuscarawas</a><br />
+                                <a href="search_details.aspx?cities=Youngstown">Youngstown</a><br />
+                                <a href="search_details.aspx?cities=Zanesville">Zanesville</a> <br />
+
+                                <h4>Oklahoma</h4><a name=OK></a>
+                                <a href="search_details.aspx?cities=Oklahoma">Oklahoma</a><br />
+                                <a href="search_details.aspx?cities=Lawton">Lawton</a><br />
+                                <a href="search_details.aspx?cities=Oklahoma City">Oklahoma City</a><br />
+                                <a href="search_details.aspx?cities=Stillwater">Stillwater</a><br />
+                                <a href="search_details.aspx?cities=Tulsa">Tulsa</a> <br />
+
+                                <h4>Oregon</h4><a name=OR></a>
+                                <a href="search_details.aspx?cities=Oregon">Oregon</a><br />
+                                <a href="search_details.aspx?cities=Bend">Bend</a><br />
+                                <a href="search_details.aspx?cities=Corvallis">Corvallis</a><br />
+                                <a href="search_details.aspx?cities=East Oregon">East Oregon</a><br />
+                                <a href="search_details.aspx?cities=Eugene">Eugene</a><br />
+                                <a href="search_details.aspx?cities=Medford">Medford</a><br />
+                                <a href="search_details.aspx?cities=Oregon Coast">Oregon Coast</a><br />
+                                <a href="search_details.aspx?cities=Portland">Portland</a><br />
+                                <a href="search_details.aspx?cities=Roseburg">Roseburg</a><br />
+                                <a href="search_details.aspx?cities=Salem">Salem</a><br />
+
+                                <h4>Pennsylvania</h4><a name=PA></a>
+                                <a href="search_details.aspx?cities=Pennsylvania">Pennsylvania</a><br />
+                                <a href="search_details.aspx?cities=Allentown">Allentown</a><br />
+                                <a href="search_details.aspx?cities=Altoona">Altoona</a><br />
+                                <a href="search_details.aspx?cities=Chambersburg">Chambersburg</a><br />
+                                <a href="search_details.aspx?cities=Erie">Erie</a><br />
+                                <a href="search_details.aspx?cities=Harrisburg">Harrisburg</a><br />
+                                <a href="search_details.aspx?cities=Lancaster">Lancaster</a><br />
+                                <a href="search_details.aspx?cities=Meadville">Meadville</a><br />
+                                <a href="search_details.aspx?cities=Pennstate">Pennstate</a><br />
+                                <a href="search_details.aspx?cities=Philadelphia">Philadelphia</a><br />
+                                <a href="search_details.aspx?cities=Pittsburgh">Pittsburgh</a><br />
+                                <a href="search_details.aspx?cities=Poconos">Poconos</a><br />
+                                <a href="search_details.aspx?cities=Reading">Reading</a><br />
+                                <a href="search_details.aspx?cities=Scranton">Scranton</a><br />
+                                <a href="search_details.aspx?cities=Williamsport">Williamsport</a><br />
+                                <a href="search_details.aspx?cities=York">York</a><br />
+                                <a href="search_details.aspx?cities=Visalia">Visalia</a><br />
+
+
+                                <h4>Puerto Rico</h4><a name=PR></a>
+                                <a href="search_details.aspx?cities=Puerto Rico">Puerto Rico</a>
+
+                                <h4>South Carolina</h4><a name=SC></a>
+                                <a href="search_details.aspx?cities=South Carolina">South Carolina</a><br />
+                                <a href="search_details.aspx?cities=Charleston">Charleston</a><br />
+                                <a href="search_details.aspx?cities=Columbia">Columbia</a><br />
+                                <a href="search_details.aspx?cities=Florence">Florence</a><br />
+                                <a href="search_details.aspx?cities=Greenville">Greenville</a><br />
+                                <a href="search_details.aspx?cities=Hilton Head">Hilton Head</a><br />
+                                <a href="search_details.aspx?cities=Myrtle Beach">Myrtle Beach</a><br />
+
+                                <h4>South Dakota</h4><a id=SD></a>
+                                <a href="search_details.aspx?cities=Aberdeen">Aberdeen</a><br />
+                                <a href="search_details.aspx?cities=Box Elder">Box Elder</a><br />
+                                <a href="search_details.aspx?cities=Brandon">Brandon</a><br />
+                                <a href="search_details.aspx?cities=Brookings">Brookings</a><br />
+                                <a href="search_details.aspx?cities=Huron">Huron</a><br />
+                                <a href="search_details.aspx?cities=Barre">Madison</a><br />
+                                <a href="search_details.aspx?cities=Mitchell">Mitchell</a><br />
+                                <a href="search_details.aspx?cities=Pierre">Pierre</a><br />
+                                <a href="search_details.aspx?cities=Rapid City">Rapid City</a><br />
+                                <a href="search_details.aspx?cities=Rapid Valley">Rapid Valley</a><br />
+                                <a href="search_details.aspx?cities=Sioux Falls">Sioux Falls</a><br />
+                                <a href="search_details.aspx?cities=Spearfish">Spearfish</a><br />
+                                <a href="search_details.aspx?cities=Sturgis">Sturgis</a><br />
+                                <a href="search_details.aspx?cities=Vermillion">Vermillion</a><br />
+                                <a href="search_details.aspx?cities=Watertown">Watertown</a><br />
+                                <a href="search_details.aspx?cities=Yankton">Yankton</a><br />
+
+                                <h4>Tennessee</h4><a name=TN></a>
+                                <a href="search_details.aspx?cities=Tennessee">Tennessee</a><br />
+                                <a href="search_details.aspx?cities=Chattanooga">Chattanooga</a><br />
+                                <a href="search_details.aspx?cities=Clarksville">Clarksville</a><br />
+                                <a href="search_details.aspx?cities=Cookeville">Cookeville</a><br />
+                                <a href="search_details.aspx?cities=Knoxville">Knoxville</a><br />
+                                <a href="search_details.aspx?cities=Memphis">Memphis</a><br />
+                                <a href="search_details.aspx?cities=Nashville">Nashville</a><br />
+                                <a href="search_details.aspx?cities=Tri-cities">Tri-cities</a><br />
+
+                                <H4>Texas</H4><a name=TX></a>
+                                <a href="search_details.aspx?cities=Abilene">Abilene</a><br />
+                                <a href="search_details.aspx?cities=Amarillo">Amarillo</a><br />
+                                <a href="search_details.aspx?cities=Austin">Austin</a><br />
+                                <a href="search_details.aspx?cities=Beaumont">Beaumont</a><br />
+                                <a href="search_details.aspx?cities=Brownsville">Brownsville</a><br />
+                                <a href="search_details.aspx?cities=College Station">College Station</a><br />
+                                <a href="search_details.aspx?cities=Corpus Christi">Corpus Christi</a><br />
+                                <a href="search_details.aspx?cities=Dallas">Dallas</a><br />
+                                <a href="search_details.aspx?cities=Del Rio">Del Rio</a><br />
+                                <a href="search_details.aspx?cities=Denton">Denton</a><br />
+                                <a href="search_details.aspx?cities=El Paso">El Paso</a><br />
+                                <a href="search_details.aspx?cities=Galveston">Galveston</a><br />
+                                <a href="search_details.aspx?cities=Houston">Houston</a><br />
+                                <a href="search_details.aspx?cities=Huntsville">Huntsville</a><br />
+                                <a href="search_details.aspx?cities=Killeen">Killeen</a><br />
+                                <a href="search_details.aspx?cities=Laredo">Laredo</a><br />
+                                <a href="search_details.aspx?cities=Lubbock">Lubbock</a><br />
+                                <a href="search_details.aspx?cities=Mcallen">Mcallen</a><br />
+                                <a href="search_details.aspx?cities=Odessa">Odessa</a><br />
+                                <a href="search_details.aspx?cities=San Antonio">San Antonio</a><br />
+                                <a href="search_details.aspx?cities=San Marcos">San Marcos</a><br />
+                                <a href="search_details.aspx?cities=Texarkana">Texarkana</a><br />
+                                <a href="search_details.aspx?cities=Texoma">Texoma</a><br />
+                                <a href="search_details.aspx?cities=Tyler">Tyler</a><br />
+                                <a href="search_details.aspx?cities=Victoria">Victoria</a><br />
+                                <a href="search_details.aspx?cities=Waco">Waco</a><br />
+                                <a href="search_details.aspx?cities=Wichita Falls">Wichita Falls</a> <br />
+
+                                <h4>Utah</h4><a name=UT></a>
+                                <a href="search_details.aspx?cities=Utah">Utah</a><br />
+                                <a href="search_details.aspx?cities=Logan">Logan</a><br />
+                                <a href="search_details.aspx?cities=Ogden">Ogden</a><br />
+                                <a href="search_details.aspx?cities=Provo">Provo</a><br />
+                                <a href="search_details.aspx?cities=Salt Lake City">Salt Lake City</a><br />
+                                <a href="search_details.aspx?cities=St. George">St George</a> <br />
+
+
+
+                                <h4>Vermont</h4><a id=VT></a>
+                                <a href="search_details.aspx?cities=Barre">Barre</a><br />
+                                <a href="search_details.aspx?cities=Bennington">Bennington</a><br />
+                                <a href="search_details.aspx?cities=Brattleboro">Brattleboro</a><br />
+                                <a href="search_details.aspx?cities=Chester">Chester</a><br />
+                                <a href="search_details.aspx?cities=Colchester">Colchester</a><br />
+                                <a href="search_details.aspx?cities=East Saint Johnsbury">East Saint Johnsbury</a><br />
+                                <a href="search_details.aspx?cities=Essex Junction">Essex Junction</a><br />
+                                <a href="search_details.aspx?cities=Hartford">Hartford</a><br />
+                                <a href="search_details.aspx?cities=Hydeville">Hydeville</a><br />
+                                <a href="search_details.aspx?cities=Killington">Killington</a><br />
+                                <a href="search_details.aspx?cities=Ludlow">Ludlow</a><br />
+                                <a href="search_details.aspx?cities=Manchester Center">Manchester Center</a><br />
+                                <a href="search_details.aspx?cities=Middlebury">Middlebury</a><br />
+                                <a href="search_details.aspx?cities=Milton">Milton</a><br />
+                                <a href="search_details.aspx?cities=Montpelier">Montpelier</a><br />
+                                <a href="search_details.aspx?cities=Rutland">Rutland</a><br />
+                                <a href="search_details.aspx?cities=Saint Albans">Saint Albans</a><br />
+                                <a href="search_details.aspx?cities=Shelburne">Shelburne</a><br />
+                                <a href="search_details.aspx?cities=South Burlington">South Burlington</a><br />
+                                <a href="search_details.aspx?cities=Williston">Williston</a><br />
+                                <a href="search_details.aspx?cities=Winooski">Winooski</a> <br />
+
+                                <h4>Virginia</h4><a name=VA></a>
+                                <a href="search_details.aspx?cities=Blacksburg">Blacksburg</a><br />
+                                <a href="search_details.aspx?cities=Charlottesville">Charlottesville</a><br />
+                                <a href="search_details.aspx?cities=Chesapeake">Chesapeake</a><br />
+                                <a href="search_details.aspx?cities=Danville">Danville</a><br />
+                                <a href="search_details.aspx?cities=Fredericksburg">Fredericksburg</a><br />
+                                <a href="search_details.aspx?cities=Hampton">Hampton</a><br />
+                                <a href="search_details.aspx?cities=Harrisonburg">Harrisonburg</a><br />
+                                <a href="search_details.aspx?cities=Lynchburg">Lynchburg</a><br />
+                                <a href="search_details.aspx?cities=Newport News">Newport News</a><br />
+                                <a href="search_details.aspx?cities=Norfolk">Norfolk</a><br />
+                                <a href="search_details.aspx?cities=Portsmouth">Portsmouth</a><br />
+                                <a href="search_details.aspx?cities=Richmond">Richmond</a><br />
+                                <a href="search_details.aspx?cities=Roanoke">Roanoke</a><br />
+                                <a href="search_details.aspx?cities=Southwest Virginia">Southwest Virginia</a><br />
+                                <a href="search_details.aspx?cities=Suffolk">Suffolk</a><br />
+                                <a href="search_details.aspx?cities=Virginia Beach">Virginia Beach</a> <br />
+
+                                <h4>Washington</h4><a name=WA></a>
+                                <a href="search_details.aspx?cities=Washington">Washington</a><br />
+                                <a href="search_details.aspx?cities=Bellingham">Bellingham</a><br />
+                                <a href="search_details.aspx?cities=Everett">Everett</a><br />
+                                <a href="search_details.aspx?cities=Moses Lake">Moses Lake</a><br />
+                                <a href="search_details.aspx?cities=Mt. Vernon">Mt. Vernon</a><br />
+                                <a href="search_details.aspx?cities=Olympia">Olympia</a><br />
+                                <a href="search_details.aspx?cities=Pullman">Pullman</a><br />
+                                <a href="search_details.aspx?cities=Seattle">Seattle</a><br />
+                                <a href="search_details.aspx?cities=Spokane">Spokane</a><br />
+                                <a href="search_details.aspx?cities=Tacoma">Tacoma</a><br />
+                                <a href="search_details.aspx?cities=Tri-cities">Tri-cities</a><br />
+                                <a href="search_details.aspx?cities=Wenatchee">Wenatchee</a><br />
+                                <a href="search_details.aspx?cities=Yakima">Yakima</a> <br />
+
+                                <h4>West Virginia</h4><a name=WV></a>
+                                <a href="search_details.aspx?cities=West Virginia">West Virginia</a><br />
+                                <a href="search_details.aspx?cities=Charleston">Charleston</a><br />
+                                <a href="search_details.aspx?cities=Huntington">Huntington</a><br />
+                                <a href="search_details.aspx?cities=Martinsburg">Martinsburg</a><br />
+                                <a href="search_details.aspx?cities=Morgantown">Morgantown</a><br />
+                                <a href="search_details.aspx?cities=Parkersburg">Parkersburg</a><br />
+                                <a href="search_details.aspx?cities=Southern West Virgin">Southern West Virgin</a><br />
+                                <a href="search_details.aspx?cities=Wheeling">Wheeling</a><br />
+
+
+
+                                <h4>Wisconsin</h4><a name=WI></a>
+                                <a href="search_details.aspx?cities=Wisconsin">Wisconsin</a><br />
+                                <a href="search_details.aspx?cities=Appleton">Appleton</a><br />
+                                <a href="search_details.aspx?cities=Eauclaire">Eauclaire</a><br />
+                                <a href="search_details.aspx?cities=Green Bay">Green Bay</a><br />
+                                <a href="search_details.aspx?cities=Janesville">Janesville</a><br />
+                                <a href="search_details.aspx?cities=La Crosse">La Crosse</a><br />
+                                <a href="search_details.aspx?cities=Madison">Madison</a><br />
+                                <a href="search_details.aspx?cities=Milwaukee">Milwaukee</a><br />
+                                <a href="search_details.aspx?cities=Racine">Racine</a><br />
+                                <a href="search_details.aspx?cities=Sheboygan">Sheboygan</a><br />
+                                <a href="search_details.aspx?cities=Wausau">Wausau</a><br />
+
+                                <h4>Wyoming</h4><a id=WY></a>
+                                <a href="search_details.aspx?cities=Bridger Valley">Bridger Valley</a><br />
+                                <a href="search_details.aspx?cities=Casper">Casper</a><br />
+                                <a href="search_details.aspx?cities=Cheyenne">Cheyenne</a><br />
+                                <a href="search_details.aspx?cities=Cody">Cody</a><br />
+                                <a href="search_details.aspx?cities=Douglas">Douglas</a><br />
+                                <a href="search_details.aspx?cities=Evanston">Evanston</a><br />
+                                <a href="search_details.aspx?cities=Gillette">Gillette</a><br />
+                                <a href="search_details.aspx?cities=Green River">Green River</a><br />
+                                <a href="search_details.aspx?cities=Jackson Hole">Jackson Hole</a><br />
+                                <a href="search_details.aspx?cities=Jackson">Jackson</a><br />
+                                <a href="search_details.aspx?cities=Lander">Lander</a><br />
+                                <a href="search_details.aspx?cities=Laramie">Laramie</a><br />
+                                <a href="search_details.aspx?cities=Powell">Powell</a><br />
+                                <a href="search_details.aspx?cities=Rawlins">Rawlins</a><br />
+                                <a href="search_details.aspx?cities=iverton">Riverton</a><br />
+                                <a href="search_details.aspx?cities=Rock Springs">Rock Springs</a><br />
+                                <a href="search_details.aspx?cities=Sheridan">Sheridan</a><br />
+                                <a href="search_details.aspx?cities=Torrington">Torrington</a><br />
+                                <a href="search_details.aspx?cities=Wind River">Wind River</a><br />
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+                            <div class="column" style="background-color:#f6f6f6;">
+
+
+                                <H4>Nebraska</H4><a id=NE></a>
+                                <a href="search_details.aspx?cities=Nebraska">Nebraska</a><br />
+                                <a href="search_details.aspx?cities=Grand Island">Grand Island</a><br />
+                                <a href="search_details.aspx?cities=Lincoln">Lincoln</a><br />
+                                <a href="search_details.aspx?cities=North Platte">North Platte</a><br />
+                                <a href="search_details.aspx?cities=Omaha">Omaha</a><br />
+                                <a href="search_details.aspx?cities=Scotts Bluff">Scotts Bluff</a>
+
+                                <h4>Nevada</h4><a id=NV></a>
+                                <a href="search_details.aspx?cities=Nevada">Nevada</a><br />
+                                <a href="search_details.aspx?cities=Elko">Elko</a><br />
+                                <a href="search_details.aspx?cities=Las Vegas">Las Vegas</a><br />
+                                <a href="search_details.aspx?cities=Reno">Reno</a>
+
+                                <h4>New Hampshire</h4><a id=NH></a>
+                                <a href="search_details.aspx?cities=New Hampshire">Manchester</a>
+
+                                <h4>New Jersey</h4><a id=NJ></a>
+                                <a href="search_details.aspx?cities=New Jersey">New Jersey</a><br />
+                                <a href="search_details.aspx?cities=Central Jersey">Central Jersey</a><br />
+                                <a href="search_details.aspx?cities=Jersey Shore">Jersey Shore</a><br />
+                                <a href="search_details.aspx?cities=North Jersey">North Jersey</a><br />
+                                <a href="search_details.aspx?cities=South Jersey">South Jersey</a>
+
+                                <h4>New Mexico</h4><a id=NM></a>
+                                <a href="search_details.aspx?cities=New Mexico">New Mexico</a><br />
+                                <a href="search_details.aspx?cities=Albuquerque">Albuquerque</a><br />
+                                <a href="search_details.aspx?cities=Clovis">Clovis</a><br />
+                                <a href="search_details.aspx?cities=Farmington">Farmington</a><br />
+                                <a href="search_details.aspx?cities=Las Cruces">Las Cruces</a><br />
+                                <a href="search_details.aspx?cities=Carlsbad">Carlsbad</a><br />
+                                <a href="search_details.aspx?cities=Roswell">Roswell</a><br />
+                                <a href="search_details.aspx?cities=Santafe">Santafe</a><br />
+
+
+                                <h4>New York</h4><a id=NY></a>
+                                <a href="search_details.aspx?cities=Albany">Albany</a><br />
+                                <a href="search_details.aspx?cities=Bronx">Bronx</a><br />
+                                <a href="search_details.aspx?cities=Binghamton">Binghamton</a><br />
+                                <a href="search_details.aspx?cities=Buffalo">Buffalo</a><br />
+                                <a href="search_details.aspx?cities=Catskills">Catskills</a><br />
+                                <a href="search_details.aspx?cities=Chautauqua">Chautauqua</a><br />
+                                <a href="search_details.aspx?cities=Elmira">Elmira</a><br />
+                                <a href="search_details.aspx?cities=Fairfield">Fairfield</a><br />
+                                <a href="search_details.aspx?cities=Finger Lake">Finger Lakes</a><br />
+                                <a href="search_details.aspx?cities=Glens Falls">Glens Falls</a><br />
+                                <a href="search_details.aspx?cities=Hudson Valley">Hudson Valley</a><br />
+                                <a href="search_details.aspx?cities=Ithaca">Ithaca</a><br />
+                                <a href="search_details.aspx?cities=New York">New York</a><br />
+                                <a href="search_details.aspx?cities=Long Island">Long Island</a><br />
+                                <a href="search_details.aspx?cities=Manhattan">Manhattan</a><br />
+                                <a href="search_details.aspx?cities=Oneonta">Oneonta</a><br />
+                                <a href="search_details.aspx?cities=Plattsburgh">Plattsburgh</a><br />
+                                <a href="search_details.aspx?cities=Potsdam">Potsdam</a><br />
+                                <a href="search_details.aspx?cities=Rochester">Rochester</a><br />
+                                <a href="search_details.aspx?cities=Staten Island">Staten Island</a><br />
+                                <a href="search_details.aspx?cities=Syracuse">Syracuse</a><br />
+                                <a href="search_details.aspx?cities=Twintiers">Twintiers</a><br />
+                                <a href="search_details.aspx?cities=Utica">Utica</a><br />
+                                <a href="search_details.aspx?cities=Watertown">Watertown</a><br />
+                                <a href="search_details.aspx?cities=Westchester">Westchester</a> <br />
+
+
+
+                                <h4>North Carolina</h4><a id=NC></a>
+                                <a href="search_details.aspx?cities=North Carolina">North Carolina</a><br />
+                                <a href="search_details.aspx?cities=Asheville">Asheville</a><br />
+                                <a href="search_details.aspx?cities=Boone">Boone</a><br />
+                                <a href="search_details.aspx?cities=Charlotte">Charlotte</a><br />
+                                <a href="search_details.aspx?cities=Eastern">Eastern NC</a><br />
+                                <a href="search_details.aspx?cities=Fayetteville">Fayetteville</a><br />
+                                <a href="search_details.aspx?cities=Greensboro">Greensboro</a><br />
+                                <a href="search_details.aspx?cities=Hickory">Hickory</a><br />
+                                <a href="search_details.aspx?cities=Outer Banks">Outer Banks</a><br />
+                                <a href="search_details.aspx?cities=Raleigh">Raleigh</a><br />
+                                <a href="search_details.aspx?cities=Salem">Salem</a><br />
+                                <a href="search_details.aspx?cities=Wilmington">Wilmington</a><br />
+                                <a href="search_details.aspx?cities=Winston Salem">Winston Salem</a><br />
+
+                                <h4>North Dakota</h4><a id=ND></a>
+                                <a href="search_details.aspx?cities=North Dakota">North Dakota</a>
+                                <a href="search_details.aspx?cities=Bismarck">Bismarck</a>
+                                <a href="search_details.aspx?cities=Fargo">Fargo</a>
+                                <a href="search_details.aspx?cities=Grand Forks">Grand Forks</a>
+                                <a href="search_details.aspx?cities=Minot">Minot</a><br />
+
+                                <H4>Ohio</H4><a id=OH></a>
+                                <a href="search_details.aspx?cities=Ohio">Ohio</a><br />
+                                <a href="search_details.aspx?cities=AkronCanton">Akron</a><br />
+                                <a href="search_details.aspx?cities=Ashtabula">Ashtabula</a><br />
+                                <a href="search_details.aspx?cities=Athens">Athens</a><br />
+                                <a href="search_details.aspx?cities=Chillicothe">Chillicothe</a><br />
+                                <a href="search_details.aspx?cities=Cincinnati">Cincinnati</a><br />
+                                <a href="search_details.aspx?cities=Cleveland">Cleveland</a><br />
+                                <a href="search_details.aspx?cities=Columbus">Columbus</a><br />
+                                <a href="search_details.aspx?cities=Dayton">Dayton</a><br />
+                                <a href="search_details.aspx?cities=Lima">Lima</a><br />
+                                <a href="search_details.aspx?cities=Mansfield">Mansfield</a><br />
+                                <a href="search_details.aspx?cities=Sandusky">Sandusky</a><br />
+                                <a href="search_details.aspx?cities=Toledo">Toledo</a><br />
+                                <a href="search_details.aspx?cities=Tuscarawas County">Tuscarawas</a><br />
+                                <a href="search_details.aspx?cities=Youngstown">Youngstown</a><br />
+                                <a href="search_details.aspx?cities=Zanesville">Zanesville</a> <br />
+
+                                <h4>Oklahoma</h4><a id=OK></a>
+                                <a href="search_details.aspx?cities=Oklahoma">Oklahoma</a><br />
+                                <a href="search_details.aspx?cities=Lawton">Lawton</a><br />
+                                <a href="search_details.aspx?cities=Oklahoma City">Oklahoma City</a><br />
+                                <a href="search_details.aspx?cities=Stillwater">Stillwater</a><br />
+                                <a href="search_details.aspx?cities=Tulsa">Tulsa</a> <br />
+
+                                <h4>Oregon</h4><a id=OR></a>
+                                <a href="search_details.aspx?cities=Oregon">Oregon</a><br />
+                                <a href="search_details.aspx?cities=Bend">Bend</a><br />
+                                <a href="search_details.aspx?cities=Corvallis">Corvallis</a><br />
+                                <a href="search_details.aspx?cities=East Oregon">East Oregon</a><br />
+                                <a href="search_details.aspx?cities=Eugene">Eugene</a><br />
+                                <a href="search_details.aspx?cities=Medford">Medford</a><br />
+                                <a href="search_details.aspx?cities=Oregon Coast">Oregon Coast</a><br />
+                                <a href="search_details.aspx?cities=Portland">Portland</a><br />
+                                <a href="search_details.aspx?cities=Roseburg">Roseburg</a><br />
+                                <a href="search_details.aspx?cities=Salem">Salem</a><br />
+
+                                <h4>Pennsylvania</h4><a id=PA></a>
+                                <a href="search_details.aspx?cities=Pennsylvania">Pennsylvania</a><br />
+                                <a href="search_details.aspx?cities=Allentown">Allentown</a><br />
+                                <a href="search_details.aspx?cities=Altoona">Altoona</a><br />
+                                <a href="search_details.aspx?cities=Chambersburg">Chambersburg</a><br />
+                                <a href="search_details.aspx?cities=Erie">Erie</a><br />
+                                <a href="search_details.aspx?cities=Harrisburg">Harrisburg</a><br />
+                                <a href="search_details.aspx?cities=Lancaster">Lancaster</a><br />
+                                <a href="search_details.aspx?cities=Meadville">Meadville</a><br />
+                                <a href="search_details.aspx?cities=Pennstate">Pennstate</a><br />
+                                <a href="search_details.aspx?cities=Philadelphia">Philadelphia</a><br />
+                                <a href="search_details.aspx?cities=Pittsburgh">Pittsburgh</a><br />
+                                <a href="search_details.aspx?cities=Poconos">Poconos</a><br />
+                                <a href="search_details.aspx?cities=Reading">Reading</a><br />
+                                <a href="search_details.aspx?cities=Scranton">Scranton</a><br />
+                                <a href="search_details.aspx?cities=Williamsport">Williamsport</a><br />
+                                <a href="search_details.aspx?cities=York">York</a><br />
+                                <a href="search_details.aspx?cities=Visalia">Visalia</a><br />
+
+
+                                <h4>Puerto Rico</h4><a id=PR></a>
+                                <a href="search_details.aspx?cities=Puerto Rico">Puerto Rico</a>
+
+                                <h4>South Carolina</h4><a id=SC></a>
+                                <a href="search_details.aspx?cities=South Carolina">South Carolina</a><br />
+                                <a href="search_details.aspx?cities=Charleston">Charleston</a><br />
+                                <a href="search_details.aspx?cities=Columbia">Columbia</a><br />
+                                <a href="search_details.aspx?cities=Florence">Florence</a><br />
+                                <a href="search_details.aspx?cities=Greenville">Greenville</a><br />
+                                <a href="search_details.aspx?cities=Hilton Head">Hilton Head</a><br />
+                                <a href="search_details.aspx?cities=Myrtle Beach">Myrtle Beach</a><br />
+
+                                <h4>South Dakota</h4><a id=SD></a>
+                                <a href="search_details.aspx?cities=Aberdeen">Aberdeen</a><br />
+                                <a href="search_details.aspx?cities=Box Elder">Box Elder</a><br />
+                                <a href="search_details.aspx?cities=Brandon">Brandon</a><br />
+                                <a href="search_details.aspx?cities=Brookings">Brookings</a><br />
+                                <a href="search_details.aspx?cities=Huron">Huron</a><br />
+                                <a href="search_details.aspx?cities=Barre">Madison</a><br />
+                                <a href="search_details.aspx?cities=Mitchell">Mitchell</a><br />
+                                <a href="search_details.aspx?cities=Pierre">Pierre</a><br />
+                                <a href="search_details.aspx?cities=Rapid City">Rapid City</a><br />
+                                <a href="search_details.aspx?cities=Rapid Valley">Rapid Valley</a><br />
+                                <a href="search_details.aspx?cities=Sioux Falls">Sioux Falls</a><br />
+                                <a href="search_details.aspx?cities=Spearfish">Spearfish</a><br />
+                                <a href="search_details.aspx?cities=Sturgis">Sturgis</a><br />
+                                <a href="search_details.aspx?cities=Vermillion">Vermillion</a><br />
+                                <a href="search_details.aspx?cities=Watertown">Watertown</a><br />
+                                <a href="search_details.aspx?cities=Yankton">Yankton</a><br />
+
+                                <h4>Tennessee</h4><a id=TN></a>
+                                <a href="search_details.aspx?cities=Tennessee">Tennessee</a><br />
+                                <a href="search_details.aspx?cities=Chattanooga">Chattanooga</a><br />
+                                <a href="search_details.aspx?cities=Clarksville">Clarksville</a><br />
+                                <a href="search_details.aspx?cities=Cookeville">Cookeville</a><br />
+                                <a href="search_details.aspx?cities=Knoxville">Knoxville</a><br />
+                                <a href="search_details.aspx?cities=Memphis">Memphis</a><br />
+                                <a href="search_details.aspx?cities=Nashville">Nashville</a><br />
+                                <a href="search_details.aspx?cities=Tri-cities">Tri-cities</a><br />
+
+                                <H4>Texas</H4><a id=TX></a>
+                                <a href="search_details.aspx?cities=Abilene">Abilene</a><br />
+                                <a href="search_details.aspx?cities=Amarillo">Amarillo</a><br />
+                                <a href="search_details.aspx?cities=Austin">Austin</a><br />
+                                <a href="search_details.aspx?cities=Beaumont">Beaumont</a><br />
+                                <a href="search_details.aspx?cities=Brownsville">Brownsville</a><br />
+                                <a href="search_details.aspx?cities=College Station">College Station</a><br />
+                                <a href="search_details.aspx?cities=Corpus Christi">Corpus Christi</a><br />
+                                <a href="search_details.aspx?cities=Dallas">Dallas</a><br />
+                                <a href="search_details.aspx?cities=Del Rio">Del Rio</a><br />
+                                <a href="search_details.aspx?cities=Denton">Denton</a><br />
+                                <a href="search_details.aspx?cities=El Paso">El Paso</a><br />
+                                <a href="search_details.aspx?cities=Galveston">Galveston</a><br />
+                                <a href="search_details.aspx?cities=Houston">Houston</a><br />
+                                <a href="search_details.aspx?cities=Huntsville">Huntsville</a><br />
+                                <a href="search_details.aspx?cities=Killeen">Killeen</a><br />
+                                <a href="search_details.aspx?cities=Laredo">Laredo</a><br />
+                                <a href="search_details.aspx?cities=Lubbock">Lubbock</a><br />
+                                <a href="search_details.aspx?cities=Mcallen">Mcallen</a><br />
+                                <a href="search_details.aspx?cities=Odessa">Odessa</a><br />
+                                <a href="search_details.aspx?cities=San Antonio">San Antonio</a><br />
+                                <a href="search_details.aspx?cities=San Marcos">San Marcos</a><br />
+                                <a href="search_details.aspx?cities=Texarkana">Texarkana</a><br />
+                                <a href="search_details.aspx?cities=Texoma">Texoma</a><br />
+                                <a href="search_details.aspx?cities=Tyler">Tyler</a><br />
+                                <a href="search_details.aspx?cities=Victoria">Victoria</a><br />
+                                <a href="search_details.aspx?cities=Waco">Waco</a><br />
+                                <a href="search_details.aspx?cities=Wichita Falls">Wichita Falls</a> <br />
+
+                                <h4>Utah</h4><a id=UT></a>
+                                <a href="search_details.aspx?cities=Utah">Utah</a><br />
+                                <a href="search_details.aspx?cities=Logan">Logan</a><br />
+                                <a href="search_details.aspx?cities=Ogden">Ogden</a><br />
+                                <a href="search_details.aspx?cities=Provo">Provo</a><br />
+                                <a href="search_details.aspx?cities=Salt Lake City">Salt Lake City</a><br />
+                                <a href="search_details.aspx?cities=St. George">St George</a> <br />
+
+                                <h4>Vermont</h4><a id=VT></a>
+                                <a href="search_details.aspx?cities=Barre">Barre</a><br />
+                                <a href="search_details.aspx?cities=Bennington">Bennington</a><br />
+                                <a href="search_details.aspx?cities=Brattleboro">Brattleboro</a><br />
+                                <a href="search_details.aspx?cities=Chester">Chester</a><br />
+                                <a href="search_details.aspx?cities=Colchester">Colchester</a><br />
+                                <a href="search_details.aspx?cities=East Saint Johnsbury">East Saint Johnsbury</a><br />
+                                <a href="search_details.aspx?cities=Essex Junction">Essex Junction</a><br />
+                                <a href="search_details.aspx?cities=Hartford">Hartford</a><br />
+                                <a href="search_details.aspx?cities=Hydeville">Hydeville</a><br />
+                                <a href="search_details.aspx?cities=Killington">Killington</a><br />
+                                <a href="search_details.aspx?cities=Ludlow">Ludlow</a><br />
+                                <a href="search_details.aspx?cities=Manchester Center">Manchester Center</a><br />
+                                <a href="search_details.aspx?cities=Middlebury">Middlebury</a><br />
+                                <a href="search_details.aspx?cities=Milton">Milton</a><br />
+                                <a href="search_details.aspx?cities=Montpelier">Montpelier</a><br />
+                                <a href="search_details.aspx?cities=Rutland">Rutland</a><br />
+                                <a href="search_details.aspx?cities=Saint Albans">Saint Albans</a><br />
+                                <a href="search_details.aspx?cities=Shelburne">Shelburne</a><br />
+                                <a href="search_details.aspx?cities=South Burlington">South Burlington</a><br />
+                                <a href="search_details.aspx?cities=Williston">Williston</a><br />
+                                <a href="search_details.aspx?cities=Winooski">Winooski</a> <br />
+
+                                <h4>Virginia</h4><a id=VA></a>
+                                <a href="search_details.aspx?cities=Blacksburg">Blacksburg</a><br />
+                                <a href="search_details.aspx?cities=Charlottesville">Charlottesville</a><br />
+                                <a href="search_details.aspx?cities=Chesapeake">Chesapeake</a><br />
+                                <a href="search_details.aspx?cities=Danville">Danville</a><br />
+                                <a href="search_details.aspx?cities=Fredericksburg">Fredericksburg</a><br />
+                                <a href="search_details.aspx?cities=Hampton">Hampton</a><br />
+                                <a href="search_details.aspx?cities=Harrisonburg">Harrisonburg</a><br />
+                                <a href="search_details.aspx?cities=Lynchburg">Lynchburg</a><br />
+                                <a href="search_details.aspx?cities=Newport News">Newport News</a><br />
+                                <a href="search_details.aspx?cities=Norfolk">Norfolk</a><br />
+                                <a href="search_details.aspx?cities=Portsmouth">Portsmouth</a><br />
+                                <a href="search_details.aspx?cities=Richmond">Richmond</a><br />
+                                <a href="search_details.aspx?cities=Roanoke">Roanoke</a><br />
+                                <a href="search_details.aspx?cities=Southwest Virginia">Southwest Virginia</a><br />
+                                <a href="search_details.aspx?cities=Suffolk">Suffolk</a><br />
+                                <a href="search_details.aspx?cities=Virginia Beach">Virginia Beach</a> <br />
+
+                                <h4>Washington</h4><a id=WA></a>
+                                <a href="search_details.aspx?cities=Washington">Washington</a><br />
+                                <a href="search_details.aspx?cities=Bellingham">Bellingham</a><br />
+                                <a href="search_details.aspx?cities=Everett">Everett</a><br />
+                                <a href="search_details.aspx?cities=Moses Lake">Moses Lake</a><br />
+                                <a href="search_details.aspx?cities=Mt. Vernon">Mt. Vernon</a><br />
+                                <a href="search_details.aspx?cities=Olympia">Olympia</a><br />
+                                <a href="search_details.aspx?cities=Pullman">Pullman</a><br />
+                                <a href="search_details.aspx?cities=Seattle">Seattle</a><br />
+                                <a href="search_details.aspx?cities=Spokane">Spokane</a><br />
+                                <a href="search_details.aspx?cities=Tacoma">Tacoma</a><br />
+                                <a href="search_details.aspx?cities=Tri-cities">Tri-cities</a><br />
+                                <a href="search_details.aspx?cities=Wenatchee">Wenatchee</a><br />
+                                <a href="search_details.aspx?cities=Yakima">Yakima</a> <br />
+
+                                <h4>West Virginia</h4><a id=WV></a>
+                                <a href="search_details.aspx?cities=West Virginia">West Virginia</a><br />
+                                <a href="search_details.aspx?cities=Charleston">Charleston</a><br />
+                                <a href="search_details.aspx?cities=Huntington">Huntington</a><br />
+                                <a href="search_details.aspx?cities=Martinsburg">Martinsburg</a><br />
+                                <a href="search_details.aspx?cities=Morgantown">Morgantown</a><br />
+                                <a href="search_details.aspx?cities=Parkersburg">Parkersburg</a><br />
+                                <a href="search_details.aspx?cities=Southern West Virgin">Southern West Virgin</a><br />
+                                <a href="search_details.aspx?cities=Wheeling">Wheeling</a><br />
+
+                                <h4>Wisconsin</h4><a id=WI></a>
+                                <a href="search_details.aspx?cities=Wisconsin">Wisconsin</a><br />
+                                <a href="search_details.aspx?cities=Appleton">Appleton</a><br />
+                                <a href="search_details.aspx?cities=Eauclaire">Eauclaire</a><br />
+                                <a href="search_details.aspx?cities=Green Bay">Green Bay</a><br />
+                                <a href="search_details.aspx?cities=Janesville">Janesville</a><br />
+                                <a href="search_details.aspx?cities=La Crosse">La Crosse</a><br />
+                                <a href="search_details.aspx?cities=Madison">Madison</a><br />
+                                <a href="search_details.aspx?cities=Milwaukee">Milwaukee</a><br />
+                                <a href="search_details.aspx?cities=Racine">Racine</a><br />
+                                <a href="search_details.aspx?cities=Sheboygan">Sheboygan</a><br />
+                                <a href="search_details.aspx?cities=Wausau">Wausau</a><br />
+
+                                <h4>Wyoming</h4><a id=WY></a>
+                                <a href="search_details.aspx?cities=Bridger Valley">Bridger Valley</a><br />
+                                <a href="search_details.aspx?cities=Casper">Casper</a><br />
+                                <a href="search_details.aspx?cities=Cheyenne">Cheyenne</a><br />
+                                <a href="search_details.aspx?cities=Cody">Cody</a><br />
+                                <a href="search_details.aspx?cities=Douglas">Douglas</a><br />
+                                <a href="search_details.aspx?cities=Evanston">Evanston</a><br />
+                                <a href="search_details.aspx?cities=Gillette">Gillette</a><br />
+                                <a href="search_details.aspx?cities=Green River">Green River</a><br />
+                                <a href="search_details.aspx?cities=Jackson Hole">Jackson Hole</a><br />
+                                <a href="search_details.aspx?cities=Jackson">Jackson</a><br />
+                                <a href="search_details.aspx?cities=Lander">Lander</a><br />
+                                <a href="search_details.aspx?cities=Laramie">Laramie</a><br />
+                                <a href="search_details.aspx?cities=Powell">Powell</a><br />
+                                <a href="search_details.aspx?cities=Rawlins">Rawlins</a><br />
+                                <a href="search_details.aspx?cities=iverton">Riverton</a><br />
+                                <a href="search_details.aspx?cities=Rock Springs">Rock Springs</a><br />
+                                <a href="search_details.aspx?cities=Sheridan">Sheridan</a><br />
+                                <a href="search_details.aspx?cities=Torrington">Torrington</a><br />
+                                <a href="search_details.aspx?cities=Wind River">Wind River</a><br />
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<section class="vcenter no_top_padding">
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-test.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Nursing Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        Registered nurses (RNs) care for patients by treating and educating them about various medical ailments. The largest group of RNs work as staff nurses in hospitals
+
+                                    </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="states_cities"><img src="./assets/images/strive-lungs.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Doctor Jobs </h4>
+                                </div>
+                                <div class="desc">
+                                    <p>From 2014 to 2024, the U.S. Bureau of Labor Statistics (BLS) expected job opportunities for physicians and surgeons to increase by 14%, much faster than that of most other occupations </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>MORE</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="states_cities"><img src="./assets/images/strive-cardiology.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Pharmacy Tech Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>Work under the supervision of a licensed pharmacist and are responsible for dispensing medications. Training for a pharmacy technician job is available. </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-dna.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Entry Level Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>There are several options for behind the scene entry level medical jobs that require varying levels of education and range in their required duties. </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>

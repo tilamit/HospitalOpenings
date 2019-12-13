@@ -1,0 +1,55 @@
+
+// ============================ FOOTER ============================
+
+footer
+  .container
+    .row
+      
+      
+
+      .col-md-8
+        .widget
+          h4 Newsletter
+          p Subscribe to our Weekly Newsletter to receive Articles, Tips and Offers!
+          .newsletter_form
+            form#newsletter.form-inline(action='assets/php/mailchimp/mailchimp.php', method='POST')
+              input#email.form-control(placeholder='Give Us your e-mail...', name='email', type='text')
+              button.btn.btn-secondary.form-control(type='submit') Go AHEAD!
+              span#newsletterResponse.btn.btn-primary.hidden MESSAGE
+
+
+      .col-md-4
+        .widget.pl_about_us_widget
+                    h4 Contact details
+                    p 
+                      | (+30) 210 1234567 
+                      a(href='mailto:info@plethorafitness.com') info@plethorafitness.com            
+                    p.social
+                      a(href='https://www.facebook.com/plethorathemes')
+                        i.fa.fa-facebook
+                      a(href='https://twitter.com/PlethoraThemes')
+                        i.fa.fa-twitter
+                      a(href='https://plus.google.com/112457016609952874702/posts')
+                        i.fa.fa-google-plus
+                      a(href='https://gr.linkedin.com/pub/plethora-themes/89/552/4a9')
+                        i.fa.fa-linkedin
+                      a(href='#')
+                        i.fa.fa-instagram
+                      a(href='https://www.youtube.com/user/plethorathemes')
+                        i.fa.fa-youtube    
+                    p
+                      a(href="https://www.google.com/maps/place/79+Folsom+Ave+San+Francisco+CA+94107", target="_blank") 79 Folsom Ave, San Francisco, CA 94107        
+
+// END========================== FOOTER ============================
+
+.copyright.black_section
+  .black_section.transparent-film
+    .container
+      .row
+        .col-sm-6.col-md-6
+          | Copyright ©2015 all rights reserved
+        .col-sm-6.col-md-6.text-right
+          | Designed by <a href='http://plethorathemes.com/' target='_blank'>Plethora Themes</a>
+
+a(href="javascript:", id="return-to-top")
+  i.fa.fa-chevron-up

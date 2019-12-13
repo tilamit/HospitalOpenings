@@ -1,0 +1,34 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var isotope     = true
+- var appointmentForm = true  
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Blog Boxed & Masonry"
+    include templates/head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .secondary_section
+            .hgroup
+              .title
+                .container
+                  h1 The Blog Boxed &amp; Masonry
+              .subtitle.skincolored_section.transparent-film
+                .container    
+                  p.uppercase Medical Articles &amp; News
+      .main
+        section
+          .container
+              .row
+                .col-md-12
+                  include templates/post-grid-boxed
+      include templates/footer
+    include templates/scripts

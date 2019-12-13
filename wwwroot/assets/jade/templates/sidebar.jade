@@ -1,0 +1,94 @@
+.wpb_widgetised_column.wpb_content_element
+
+  // ============================ TEXT WIDGET ==========================
+
+  aside.widget.widget_text
+    h4 Text Widget
+    .textwidget.
+      Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus. Cras mattis cosi sectetut amet fermens etrsaters tum aecenas faucib sadips amets.
+
+  // ============================ SEARCH FORM ==========================
+
+  aside.widget.widget_search
+    form#s(role='search', method='get', name='s', action='#')
+      .input-group
+        input#search.form-control(name='s', type='text', placeholder='Search')
+        span.input-group-btn
+          button.btn.btn-default(type='submit') Find it!
+
+  // ============= ADS ===========
+
+  aside.widget.widget_ads
+    h4 Ads
+    a(href='#')
+      img(src='http://placehold.it/110', alt='')
+    a(href='#')
+      img(src='http://placehold.it/110', alt='')
+    a(href='#')
+      img(src='http://placehold.it/110', alt='')
+
+  // ========================= APPOINTMENT FORM ========================
+
+  aside.widget.widget_appointment.secondary_section.boxed
+    h4 APPOINTMENT
+    include contact-appointment-single.jade
+
+  // ========================== WORKING HOURS ==========================
+
+  aside.widget.widget_timetable.secondary_section.transparent-film.boxed(style="background-image:url('./assets/images/entry-005.jpg')")
+    h4 WORKING HOURS
+    include timetable-small.jade
+
+  // ========================== TABS ==========================
+
+  aside.widget
+    h4 Tabs
+    ul#myTab.nav.nav-tabs
+      li.active
+        a(data-toggle='tab', href='#recent') Recent
+      li
+        a(data-toggle='tab', href='#tags') Tags
+    #myTabContent.tab-content
+      #recent.tab-pane.fade.active.in
+        .pl_latest_news_widget
+          ul.media-list
+            li.media
+              a.media-photo(href='single.html' style="background-image:url('./assets/images/video-002.jpg');")
+              h5.media-heading
+                a(href='single.html') Diabetes Diet and Food Tips
+              small Dec 8
+              p You can make a big difference with healthy lifestyle changes....
+            li.media
+              a.media-photo(href='single.html' style="background-image:url('./assets/images/pricing-004.jpg');")
+              h5.media-heading
+                a(href='single.html') Prevent Asthma by changing working enviroment
+              small Dec 6
+              p Prom preventive care and checkups, to immunizations and exams, our primary…
+            li.media
+              a.media-photo(href='single.html')
+              h5.media-heading
+                a(href='single.html') Learn about Arrhythmia today
+              small Dec 7
+              p When you visit one of our four San Francisco campus locations you can expect…
+      #tags.tab-pane.fade
+        a.label.label-default Default
+        a.label.label-primary Primary
+        a.label.label-success Success
+        a.label.label-warning Warning
+        a.label.label-danger Danger
+        a.label.label-info Info
+        a.label.label-default Default
+        a.label.label-success Success
+        a.label.label-danger Danger
+        a.label.label-info Info
+        a.label.label-default Default
+        a.label.label-success Success
+        a.label.label-success Success
+        a.label.label-warning Warning
+        a.label.label-danger Danger
+        a.label.label-warning Warning
+        a.label.label-warning Warning
+        a.label.label-danger Danger
+        a.label.label-info Info
+        a.label.label-inverse Inverse
+

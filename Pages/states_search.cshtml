@@ -1,0 +1,244 @@
+﻿@page
+@model HospitalOpenings.Pages.states_searchModel
+@{
+    ViewData["Title"] = "State and Cities Search |";
+}
+
+<div class="brand-colors"></div>
+
+<div class="head_panel parallax-window">
+    @*Hospital City State - Starts*@
+    <div style="background-image: url('./assets/images/slider-4.jpg')" class="full_width_photo">
+        <div class="hgroup">
+            <div class="title diagonal-bgcolor-trans">
+                <div class="container">
+                    <h1>Hospital Jobs and Info</h1>
+                </div>
+            </div>
+            <div class="subtitle body-bg_section">
+                <div class="container">
+                    <p class="uppercase">Available States and Areas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <section></section>
+
+
+
+    <form method="post">
+        <section class="vcenter no_top_padding">
+            <div class="container">
+                <div class="row">
+                    <!-- ====================== HORIZONTAL IMAGE COMPARE =====================-->
+
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr class="info">
+                                <!-- ============================ SEARCH FORM ==========================-->
+                                <div class="main">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 section_header elegant centered">
+                                                <h2>SEARCH FOR LOCATION...</h2>
+                                                <p>covering countless cities in many states<i>(city, state)</i></p>
+                                            </div>
+                                            <div class="col-md-6 col-md-offset-2">
+                                                <input type="text" class="form-control" name="hospitalName">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button type="submit" class="btn btn-primary">SEARCH</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END=================== HORIZONTAL IMAGE COMPARE =====================-->
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- END=================== HORIZONTAL IMAGE COMPARE =====================-->
+                </div>
+            </div>
+        </section>
+    </form>
+
+
+
+
+
+    <section class="vcenter no_top_padding">
+        <div class="container">
+            <div>
+                <div class="col-md-12">
+                    @if (Model.Items != null)
+                    {
+                        @foreach (var item in Model.Items)
+                        {
+                            <h2 class="post_title"><a href="./@(item.HospitalName.Replace(" ", "-") + "-" + item.City.Replace(" ", "-") + "-" + item.State.Replace(" ", "-"))">@item.HospitalName @item.City @item.State</a></h2>
+                            <p class="post_subtitle">@item.HospitalName</p>
+                        }
+                        <div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="vcenter no_top_padding">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <div class="col-md-12">
+                        <!-- pager -->
+                        @if ((Model.value != null || Model.value != "") && Model.Pager != null)
+                        {
+                            <ul class="pagination pagination-lg">
+                                @if (Model.Pager.TotalPages > 1)
+                                {
+                                    <li class="page-item @(!Model.ShowFirst ? "disabled" : "")">
+                                        @if (Model.Pager.TotalPages > 1)
+                                        {
+                                            <a href="/states_search?currentpage=1&&search=@Model.value.Replace(" ", "-")" class="page-link">«</a>
+                                        }
+                                    </li>
+
+                                    @for (var i = Model.Pager.StartPage; i <= Model.Pager.EndPage; i++)
+                                    {
+                                        <li class="@(i == Model.Pager.CurrentPage ? "active" : "")">
+                                            <a href="/states_search?currentpage=@i&&search=@Model.value.Replace(" ", "-")" class="page-link">@i</a>
+                                        </li>
+                                    }
+
+                                    <li class="page-item  @(!Model.ShowLast ? "disabled" : "")">
+                                        <a href="/states_search?currentpage=@Model.Pager.TotalPages&&search=@Model.value.Replace(" ", "-")" class="page-link">»</a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        <div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    @*@if (Model.value == null || Model.value == "")
+        {
+            <li class="page-item @(!Model.ShowFirst ? "disabled" : "")">
+                <a href="/states_search?currentpage=1" class="page-link">«</a>
+            </li>
+
+
+            @for (var i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a href="/states_search?currentpage=@i" class="page-link">@i</a>
+                </li>
+            }
+
+            <li class="page-item  @(!Model.ShowLast ? "disabled" : "")">
+                <a href="/states_search?currentpage=@Model.TotalPages" class="page-link">»</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item @(!Model.ShowFirst ? "disabled" : "")">
+                <a href="/states_search?currentpage=1&&search=@Model.value" class="page-link">«</a>
+            </li>
+
+
+            @for (var i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a href="/states_search?currentpage=@i&&search=@Model.value" class="page-link">@i</a>
+                </li>
+            }
+
+            <li class="page-item  @(!Model.ShowLast ? "disabled" : "")">
+                <a href="/states_search?currentpage=@Model.TotalPages&&search=@Model.value" class="page-link">»</a>
+            </li>
+        }*@
+
+
+    @*Hospital City State - Ends*@
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-test.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Nursing Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        Registered nurses (RNs) care for patients by treating and educating them about various medical ailments. The largest group of RNs work as staff nurses in hospitals
+
+                                    </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="services.html"><img src="./assets/images/strive-lungs.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Doctor Jobs </h4>
+                                </div>
+                                <div class="desc">
+                                    <p>From 2014 to 2024, the U.S. Bureau of Labor Statistics (BLS) expected job opportunities for physicians and surgeons to increase by 14%, much faster than that of most other occupations </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>MORE</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="services.html"><img src="./assets/images/strive-cardiology.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Pharmacy Tech Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>Work under the supervision of a licensed pharmacist and are responsible for dispensing medications. Training for a pharmacy technician job is available. </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-dna.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Entry Level Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>There are several options for behind the scene entry level medical jobs that require varying levels of education and range in their required duties. </p>
+                                </div>
+                                <div class="link"><a href="states.html" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

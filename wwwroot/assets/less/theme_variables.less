@@ -1,0 +1,173 @@
+/*!
+ ______ _____   _______ _______ _______ _______ ______ _______ 
+|   __ \     |_|    ___|_     _|   |   |       |   __ \   _   |
+|    __/       |    ___| |   | |       |   -   |      <       |
+|___|  |_______|_______| |___| |___|___|_______|___|__|___|___|
+
+P L E T H O R A T H E M E S . C O M               (c) 2015-2016
+                        
+Theme Name: MEDICUS HTML
+THEME's VARIABLES v.1.1
+=============================================================== 
+*/
+
+//== General Colors
+
+@brand-primary: #4EABF9; //wp // This is your Brand's Primary Color. The Skin Color. Should be different and in contrast with the body background. // #45aaff; // #428bca
+@brand-secondary: #304770; //wp // Used as complementary color to the primary.
+
+@brand-success: #5cb85c;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
+
+@body-bg: #EFEFEF; //wp 
+@text-color: #323232; //wp
+
+@link-color: @brand-primary; //wp
+@link-hover-color: darken(@link-color, 15%); //wp
+
+//== Sections Colors
+
+@header-bgcolor         : @brand-secondary; //wp
+@header-linkcolor       : #ffffff; //wp
+@header-linkcolor-hover : @brand-primary; //wp
+@header-txtcolor        : #ffffff; //wp
+@header-diagonal-gradient-left-area-color: @brand-primary; //wp
+@header-diagonal-gradient-right-area-color: @brand-secondary; //wp
+
+@skin-section-bgcolor         : @brand-primary;
+@skin-section-linkcolor       : yellow; //wp
+@skin-section-linkcolor-hover : darken(@skin-section-linkcolor, 15%); //wp
+@skin-section-txtcolor        : #ffffff; //wp
+
+@secondary-section-bgcolor         : @brand-secondary;
+@secondary-section-linkcolor       : yellow; //wp
+@secondary-section-linkcolor-hover : darken(@secondary-section-linkcolor, 15%); //wp
+@secondary-section-txtcolor        : #ffffff; //wp
+
+@light-section-bgcolor         : #aaaaaa; //wp
+@light-section-linkcolor       : #1c92b9; //wp
+@light-section-linkcolor-hover : darken(@light-section-linkcolor, 15%); //wp
+@light-section-txtcolor        : #323232; //wp
+
+@dark-section-bgcolor         : #222D3F; //wp
+@dark-section-linkcolor       : #FF6B10; //wp
+@dark-section-linkcolor-hover : darken(@dark-section-linkcolor, 15%); //wp
+@dark-section-txtcolor        : #ffffff; //wp
+
+@white-section-bgcolor         : #ffffff; //wp
+@white-section-linkcolor       : @brand-primary; //wp
+@white-section-linkcolor-hover : darken(@white-section-linkcolor, 15%); //wp
+@white-section-txtcolor        : #323232; //wp
+
+@black-section-bgcolor         : #151515; //wp
+@black-section-linkcolor       : #FF6B10; //wp
+@black-section-linkcolor-hover : darken(@black-section-linkcolor, 15%); //wp
+@black-section-txtcolor        : #ffffff; //wp
+
+@footer-bgcolor         : #232323; //wp
+@footer-linkcolor       : #F8EB80; //wp
+@footer-linkcolor-hover : lighten(@footer-linkcolor, 15%); //wp
+@footer-txtcolor        : #ffffff; //wp
+
+//== Buttons Colors
+
+@btn-default-color:              @body-bg;
+@btn-default-bg:                 @text-color;
+
+@btn-primary-color:              @skin-section-txtcolor;
+@btn-primary-bg:                 @brand-primary;
+
+@btn-secondary-color:              @secondary-section-txtcolor;
+@btn-secondary-bg:                 @brand-secondary;
+
+@btn-white-color: @white-section-linkcolor;
+
+//== Transparencies
+
+@section-background-transparency: 50; //wp
+@header-background-transparency: 70; //wp
+
+//== Typography
+
+@font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; //wp
+@font-family-alternative: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; //wp
+
+@font-size-base:          			  15px;  //wp // Used as a base for the @font-family-sans-serif (body and p)
+@font-size-alternative-base:          16px;  //wp // Used as a base for the @font-family-alternative (Logo, Menu, Headings, Buttons)
+@font-size-large:         ceil((@font-size-base * 1.1));
+@font-size-small:         ceil((@font-size-base * 0.8));
+
+@font-size-h1:            floor((@font-size-alternative-base * 2.6));
+@font-size-h2:            floor((@font-size-alternative-base * 2.15));
+@font-size-h3:            floor((@font-size-alternative-base * 1.6));
+@font-size-h4:            floor((@font-size-alternative-base * 1.2));
+@font-size-h5:            @font-size-alternative-base;
+@font-size-h6:            ceil((@font-size-alternative-base * 0.85));
+
+@line-height-base:        1.5; 
+@line-height-large:       1.33;
+@line-height-small:       1.6;
+@line-height-computed:    floor((@font-size-base * @line-height-base)); 
+
+@headings-font-family:    @font-family-alternative;
+@headings-text-transform: uppercase;  //wp 
+@headings-font-weight:    normal;  //wp 
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+@btn-font-family:         @font-family-alternative;
+@btn-font-weight:         bold;
+@btn-text-transform:      uppercase;  //wp 
+
+@header-font-family:      @font-family-alternative;
+
+//== Layout
+
+@full-width-photo-min-panel-height: 380px; //wp 
+@full-width-photo-min-panel-height-sm: 280px; //wp 
+@full-width-photo-min-panel-height-xs: 80px; //wp 
+
+@map-panel-height: 480px; //wp 
+@map-panel-height-sm: 380px; //wp 
+@map-panel-height-xs: 280px; //wp 
+
+@logo-vertical-margin: 15px; //wp 
+@logo-vertical-margin-sm: 10px; //wp 
+@logo-vertical-margin-xs: 5px; //wp 
+
+@logo-font-size: 32px; //wp 
+@logo-font-size-sm: 28px; //wp 
+@logo-font-size-xs: 22px; //wp 
+
+@logo_img_max_height: 32px; //wp 
+@logo_img_max_height-sm: 28px; //wp 
+@logo_img_max_height-xs: 24px; //wp 
+
+@menu-item-vertical-padding: 10px; //wp 
+@menu-item-vertical-padding-md: 10px; //wp 
+@menu-item-vertical-padding-sm: 15px; //wp 
+
+@menu-item-horizontal-padding: 15px; //wp 
+@menu-item-horizontal-padding-md: 10px; //wp 
+@menu-item-horizontal-padding-sm: 15px; //wp 
+
+@menu-font-size: 13px; //wp 
+
+@diagonal-gradient-angle: 45deg; //wp 
+
+@header-diagonal-gradient-left-area-percentage: 30%; //wp 
+@header-diagonal-gradient-left-area-percentage-md: 30%; //wp 
+@header-diagonal-gradient-left-area-percentage-sm: 50%; //wp 
+@header-diagonal-gradient-left-area-percentage-xs: 50%; //wp 
+
+@section-vertical-padding: 55px;
+
+//== Core variables overrides
+
+@border-radius-base: 0;
+@border-radius-small: 0;
+@border-radius-large: 0;
+@padding-base-vertical: 8px; 
+@padding-base-horizontal: 24px;

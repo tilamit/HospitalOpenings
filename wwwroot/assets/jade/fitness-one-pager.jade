@@ -1,0 +1,251 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var owlSlider       = true
+- var newsletter      = true     
+- var appointmentForm = true
+- var contactForm     = true
+- var ajaxLoader      = true
+- var twitterFeed     = true 
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Health-X | Fitness One Pager"
+    include templates/fitness-head
+  body.sticky_header.one_pager
+    include templates/loader
+    .overflow_wrapper
+      include templates/fitness-header
+      include templates/fitness-headpanel-slider-owl
+      .main
+
+        section#about_us.vcenter
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 About Us
+                p.uppercase We are Health & Fitness Specialists
+            .row    
+              .col-md-6
+                p.
+                  Our team strives to achieve excellence in every aspect of the production process, from the preliminary hand-drawn sketches to the aftersales support. We carefully design our themes to be easy and flexible while making sure that most FAQ of our customers can be answered by our 
+                  detailed documentation.
+                p.
+                  We focus on using the latest web standards and practices regarding UX guidelines and WordPress theme development and strongly encourage our customers to follow us on this. The use of a child theme and the plugin-based development of ©Plethora Framework ensure hassle-free updates and peace of mind.
+                p.
+                  Personalized patient care is what sets California Pacific Medical Center apart. When you visit one of our four San Francisco campus locations you can expect to receive world class care. Expert physician specialists and caring clinical staff provide you with an exceptional health care experiene.
+              .col-md-6
+                .video_iframe.stretchy-wrapper.ratio_16-9
+                    iframe(src='http://player.vimeo.com/video/80817018?title=0&byline=0&portrait=0')
+
+        section.no_top_padding.no_cols_padding
+          .container
+            .row
+              include templates/fitness-entry-flat              
+
+        section#services.black_section.full_height
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 Services
+                p We cover a range of health and fitness sectors
+            .row
+              .col-md-4    
+
+                  .department
+                    h4.skincolored_section.transparent.transparent-film
+                      i.fa.fa-bicycle.secondary_section
+                      a(href='fitness_service_single.html').linkify Sports Nutrition
+                    a(href='fitness_service_single.html', style='background-image:url(./assets/images/fitness/Sports_Nutrition.jpg)').linkify.department_photo.stretchy-wrapper.ratio_16-9
+
+                  .department
+                    h4.skincolored_section.transparent.transparent-film
+                      i.fa.fa-heart.secondary_section
+                      a(href='fitness_service_single.html').linkify Weight Loss
+                    a(href='fitness_service_single.html', style='background-image:url(./assets/images/FITNESS/weight_loss.jpg)').linkify.department_photo.stretchy-wrapper.ratio_16-9
+
+              .col-md-8
+
+                  .department
+                    h4.skincolored_section.transparent.transparent-film
+                      i.fa.fa-child.secondary_section
+                      a(href='fitness_service_single.html').linkify Featured service
+                    a(href='fitness_service_single.html', style='background-image:url(./assets/images/fitness/dietologist.jpg)').linkify.department_photo.stretchy-wrapper.ratio_16-9
+
+            .row    
+
+              .col-md-4
+
+                .department
+                  h4.skincolored_section.transparent.transparent-film
+                    i.fa.fa-medkit.secondary_section
+                    a(href='fitness_service_single.html').linkify Physiotherapy
+                  a(href='fitness_service_single.html', style='background-image:url(./assets/images/fitness/services_physiotherapy.jpg)').linkify.department_photo.stretchy-wrapper.ratio_16-9
+
+              .col-md-4
+
+                .department
+                  h4.skincolored_section.transparent.transparent-film
+                    i.fa.fa-hotel.secondary_section
+                    a(href='fitness_service_single.html').linkify Healing Massage
+                  a(href='fitness_service_single.html', style='background-image:url(./assets/images/FITNESS/massage.jpg)').linkify.department_photo.stretchy-wrapper.ratio_16-9
+
+              .col-md-4
+
+                .department
+                  h4.skincolored_section.transparent.transparent-film
+                    i.fa.fa-leaf.secondary_section
+                    a(href='fitness_service_single.html').linkify Guidance
+                  a(href='fitness_service_single.html', style='background-image:url(./assets/images/fitness/Comp_84901489.jpg)').linkify.department_photo.stretchy-wrapper.ratio_16-9         
+
+
+
+
+        section#fitness_plans
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered.full_width
+                h2 OUR FITNESS PLANS
+                p Request a plan to fit your needs
+              include templates/fitness-pricing
+              
+        section#testimonials.dark_section.transparent-film(style='background-image:url(./assets/images/fitness/services_physiotherapy_alt.jpg);').full_height.vertical_center
+          .container
+            .row
+              .col-md-8.col-md-offset-2.centered
+                .caption.caption-fancy
+                  .inner
+                    .t1 HEALTH-X
+                    .t3.uppercase Still not convinced?
+                .testimonial.testimonial-slider
+                  ul.slides
+                    li
+                      p Health X Services provided great care as well as customer service for my child. Their caregivers really cared about my child's well-being and displayed it on a daily basis.
+                      .name
+                        | <strong>Mary Rose</strong>, Dietology
+                    li
+                      p Health X Services provided great care as well as customer service for my child. Their caregivers really cared about my child's well-being and displayed it on a daily basis.
+                      .name
+                        | <strong>Mary Rose</strong>, Dietology
+                    li
+                      p Health X Services provided great care as well as customer service for my child. Their caregivers really cared about my child's well-being and displayed it on a daily basis.
+                      .name
+                        | <strong>Mary Rose</strong>, Fitness                 
+
+        section#team
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 Our Team
+                p We are Trained Professionals that love what we do
+            .row
+              include templates/fitness-team-members
+
+        section.dark_section#news
+          .container
+              .row
+                .col-md-12.section_header.fancy.centered
+                  h2 Usefull Articles
+                  p Tips and Tricks to stay in shape
+                .col-md-12
+                  .post-grid
+                    .row
+
+                      // ======================= ARTICLE #1 ======================
+
+                      .col-md-8.dark_section.boxed.transparent-film.same_height_col
+                        article.post
+                          h2.post_title
+                            a(href='./fitness_blog_post.html') Yoga in the morning
+                          p.post_subtitle
+                            
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By Ravi Shankabar
+                            figure.stretchy-wrapper.ratio_16-9
+                              a(href='./fitness_blog_post.html', title='Post' style="background-image: url('./assets/images/fitness/yoga.jpg')")
+                          p.
+                            The image is put here in a 12:5 ratio responsive container as a background. Whether you’re trying to prevent or control diabetes, there is some good news. You can make a big difference with healthy lifestyle changes. […]
+                          a.btn.btn-primary.linkify(href='./fitness_blog_post.html') Read More (Ajax)
+
+                        article.post
+                          h2.post_title
+                            a(href='./fitness_blog_post.html') FITNESS NUTRITION 
+                          p.post_subtitle 
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By linton Samuel Dawson 
+                            figure.stretchy-wrapper.ratio_5-1
+                              a(href='./fitness_blog_post.html', title='Post' style="background-image: url('./assets/images/fitness/blog_article_1.jpg')")
+                          p.
+                            The most important thing you can do for your health is to lose weight—but you don’t have to lose all your extra pounds to start reaping the benefits. The image is put here in a 12:5 ratio responsive container as a background. […]
+                          a.btn.btn-primary(href='./fitness_blog_post.html') Read More    
+
+                      .col-md-4.dark_section.transparent-film.boxed.same_height_col
+                        article.post
+                          h2.post_title
+                            a(href='./fitness_blog_post.html') Dietary Tips
+                          p.post_subtitle
+                            
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By Ziggy Stardust
+                            figure.stretchy-wrapper.ratio_16-9
+                              a(href='./fitness_blog_post.html', title='Post' style="background-image: url('./assets/images/blog-salad.jpg')")
+                          p.
+                            You can make a big difference with healthy lifestyle changes. The most important thing you can do for your health is to lose weight—but you don’t have to lose all your extra pounds to start reaping the benefits. […]
+                          a.btn.btn-primary(href='./fitness_blog_post.html') Read More
+
+                        article.post
+                          h2.post_title
+                            a(href='./fitness_blog_post.html') Weight Loss & fitness
+                          p.post_subtitle
+                            
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By David Byrne
+                            figure.stretchy-wrapper.ratio_16-9
+                              a(href='./fitness_blog_post.html', title='Post' style="background-image: url('./assets/images/fitness/Sports_Nutrition.jpg')")
+                          p.
+                            The image is put here in a 12:5 ratio responsive container as a background. Whether you’re trying to prevent or control diabetes, there is some good news. You can make a big difference with healthy lifestyle changes. […]
+                          a.btn.btn-primary(href='./fitness_blog_post.html') Read More
+
+                          
+
+
+
+
+        section#contact
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered
+                  h2 Contact Us
+                  p or Book an appointment now!  
+            .row
+              .col-md-8.white_section.boxed.wow.slideInLeft
+                h3.col_header QUICK CONTACT
+                include templates/contact-quick
+              .col-md-4.secondary_section.boxed
+                h3.col_header.centered APPOINTMENT
+                include templates/contact-appointment
+              
+        
+
+        section.black_section.no_padding_bottom
+          .container
+            .row
+              .col-md-12
+                include templates/twitter 
+
+      // FOOTER
+      include templates/fitness-footer
+
+    include templates/scripts

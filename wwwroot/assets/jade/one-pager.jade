@@ -1,0 +1,269 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var owlSlider       = true
+- var newsletter      = true     
+- var appointmentForm = true
+- var contactForm     = true
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "One Pager"
+    include templates/head
+    link(rel='stylesheet', href='./assets/css/style-yellow.css', type='text/css', media='all')
+  body.sticky_header.one_pager
+    .overflow_wrapper
+      // =========================== HEADER ==========================
+      .header.secondary_section.transparent.transparent-film
+        .mainbar      
+          .container
+            .logo
+              a.brand(href='index.html')
+                img(src='./assets/images/medicus-header-logo-x64.png', alt="logo")
+              p.animated.slideInLeft Onepager Colored Variation
+            .menu_container
+              span.close_menu &times; 
+              // ========================= NAVIGATION MENU ========================
+              ul.main_menu
+                li
+                  a(title='ABOUT US', href='#about_us') ABOUT US
+                li
+                  a(title='SERVICES', href='#services') SERVICES
+                li
+                  a(title='HEALTH PLANS', href='#health_plans') HEALTH PLANS
+                li
+                  a(title='News', href='#news') NEWS
+                li
+                  a(title='CONTACT', href='#contact') CONTACT
+                li
+                  a(title='Demo', href='./index.html') Demo Home
+              // END====================== NAVIGATION MENU ========================
+            label.mobile_collapser MENU  
+            // =========================== SOCIAL ICONS =========================
+            a.social_links(title='', href='#')
+              i.fa.fa-share-alt
+            .team_social
+              a(href='#'): i.fa.fa-skype
+              a(href='#'): i.fa.fa-facebook
+              a(href='#'): i.fa.fa-twitter
+              a(href='#'): i.fa.fa-linkedin
+            // END======================== SOCIAL ICONS ========================= 
+      .brand-colors  
+      // END======================== HEADER ==========================
+      include templates/headpanel-slider-full-height
+      .main
+
+        section#about_us.vcenter
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 About Us
+                p.uppercase We are a Modern Medical Clinic
+              .col-sm-12.col-md-6
+                //h3.col_header We Care for our Work!
+                p.
+                  Our team strives to achieve excellence in every aspect of the production process, from the preliminary hand-drawn sketches to the aftersales support. We carefully design our themes to be easy and flexible while making sure that most FAQ of our customers can be answered by our 
+                  detailed documentation.
+                p.
+                  We focus on using the latest web standards and practices regarding UX guidelines and WordPress theme development and strongly encourage our customers to follow us on this. The use of a child theme and the plugin-based development of ©Plethora Framework ensure hassle-free updates and peace of mind.
+                p.
+                  Personalized patient care is what sets California Pacific Medical Center apart. When you visit one of our four San Francisco campus locations you can expect to receive world class care. Expert physician specialists and caring clinical staff provide you with an exceptional health care experiene.
+              .col-sm-12.col-md-6
+                .video_iframe.stretchy-wrapper.ratio_16-9
+                    iframe(src='http://player.vimeo.com/video/99395139?title=0&byline=0&portrait=0')
+
+        section.dark_section
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 DEPARTMENTS
+                p We cover a range of medical sectors
+              include templates/departments
+
+        section
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 MEET OUR DEVOTED STAFF
+                p They are determined to serve your needs
+              .col-md-12  
+
+                // ============================ TEAM MEMBERS ============================
+                .team_members_grid.row
+
+                  .col-sm-12.col-md-6
+                    .teaser_box.same_height_col.dark_section.boxed
+                      .figure
+                        img(src='./assets/images/strive-test.png', height="100", alt="service")
+                      .content
+                        .hgroup
+                          h4 HIGHLY QUALIFIED
+                        .desc        
+                          p.
+                            Vivamus ultricies aliquet dolor vitae lacinia. Maecenas turpis dolor, rutrum nec sem sed, aliquet pretium massa. Vivamus egestas, quam at lacinia placerat, nibh ex sodales elit, at efficitur libero neque quis neque. Aenean vitae ex velit. Pellentesque iaculis justo odio, ut suscipit sapien mattis sit amet. Sed efficitur dignissim pretium. Pellentesque ac suscipit erat. Duis pulvinar malesuada elit cursus imperdiet.
+                          a.btn.btn-sm.btn-primary(href="#") LOREM IPSUM 
+
+                  .col-sm-6.col-md-3
+                    .team_member.teaser_box.centered.same_height_col.dark_section
+                      a.lightbox_single(href="./assets/images/doctor-005.jpg", style='background-image: url("./assets/images/doctor-005.jpg")').figure.stretchy-wrapper.ratio_1-1
+                      .content
+                        .hgroup
+                          h4 Johny Boycot
+                          p Pediatrician
+                        .desc        
+                          p.
+                            Then all you have to do is setup and add it in a row with the Visual Builder.
+                      .team_social
+                        a(href='mailto:'): i.fa.fa-envelope
+                        a(href='callto:#'): i.fa.fa-skype
+                        a(href='#'): i.fa.fa-facebook
+                        a(href='#'): i.fa.fa-google-plus
+
+
+                  .col-sm-6.col-md-3
+                    .team_member.teaser_box.centered.same_height_col.secondary_section
+                      a.lightbox_single(href="./assets/images/doctor-004.jpg", style='background-image: url("./assets/images/doctor-004.jpg")').figure.stretchy-wrapper.ratio_1-1
+                      .content
+                        .hgroup
+                          h4 Danny Stronghold
+                          p Anaesthesiologist
+                        .desc        
+                          p.
+                            Make sure you balance these text descriptions to maintain the strict visual rhythm of the grid.
+                      .team_social
+                        a(href='mailto:'): i.fa.fa-envelope
+                        a(href='callto:#'): i.fa.fa-skype
+                        a(href='#'): i.fa.fa-facebook
+                        a(href='#'): i.fa.fa-google-plus
+
+                // END========================= TEAM MEMBERS ============================
+
+
+
+        section.secondary_section.particles-js
+          .container
+            .row
+              .col-md-12.section_header.elegant.centered
+                h3
+                  i.fa.fa-heart.danger
+                  |  Hear what our <strong>patients</strong> say
+                p Testimonials Slider Feature
+              .col-md-8.col-md-offset-2  
+                include templates/testimonial-slider
+
+        section#services
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered 
+                h2 Services
+                p Health &amp; Medical
+              include templates/flat-selectors
+
+        section.secondary_section.transparent-film(style='background-image:url(./assets/images/slider-3.jpg);')
+          .container
+            .row
+              include templates/photo-divider     
+
+        section#health_plans
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered
+                h2 OUR HEALTH PLANS
+                p Request a health plan to fit your needs.
+              include templates/pricing
+        section.secondary_section#news
+          .container
+              .row
+                .col-md-12.section_header.fancy.centered
+                  h2 News
+                  p Articles from our blog
+                .col-md-12
+                  .post-grid.masonry.boxed_children
+                    .row
+
+                      // ======================= ARTICLE #1 ======================
+
+                      .col-md-4
+                        article.post.dark_section
+                          h2.post_title
+                            a(href='./single.html') Medical Advice
+                          p.post_subtitle
+                            | You can make a big difference with healthy lifestyle changes.  
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By Dr. Henrik Pleth
+                            figure.stretchy-wrapper.ratio_16-9
+                              a(href='./single.html', title='Post' style="background-image: url('./assets/images/blog-pills.jpg')")
+                          p.
+                            The image is put here in a 12:5 ratio responsive container as a background. Whether you’re trying to prevent or control diabetes, there is some good news. You can make a big difference with healthy lifestyle changes. The most important thing you can do for your health is to lose weight—but you don’t have to lose all your extra pounds to start reaping the benefits. […]
+                          a.btn.btn-primary(href='./single.html') Read More
+
+                      // ======================= ARTICLE #2 ======================
+
+                      .col-md-4
+                        article.post.dark_section
+                          h2.post_title
+                            a(href='./single.html') Diabetes Dietary Tips
+                          p.post_subtitle
+                            | You can make a big difference with healthy lifestyle changes.
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By Dr. Henrik Pleth
+                            figure.stretchy-wrapper.ratio_16-9
+                              a(href='./single.html', title='Post' style="background-image: url('./assets/images/blog-salad.jpg')")
+                          p.
+                            The image is put here in a 12:5 ratio responsive container as a background. Whether you’re trying to prevent or control diabetes, there is some good news. You can make a big difference with healthy lifestyle changes. The most important thing you can do for your health is to lose weight—but you don’t have to lose all your extra pounds to start reaping the benefits. […]
+                          a.btn.btn-primary(href='./single.html') Read More
+
+                      // ======================= ARTICLE #3  (VIDEO: VIMEO) ======================
+
+                      .col-md-4
+                        article.post.dark_section
+                          h2.post_title
+                            a(href='./single.html') Medical Advice
+                          p.post_subtitle
+                            | You can make a big difference with healthy lifestyle changes.
+                          .post_figure_and_info
+                            .post_sub
+                              a(href='#')
+                                span.post_info.post_author By Dr. Henrik Pleth
+                            figure.stretchy-wrapper.ratio_16-9
+                              a(href='./single.html', title='Post' style="background-image: url('./assets/images/doctor-003.jpg')")
+                          p.
+                            The image is put here in a 12:5 ratio responsive container as a background. Whether you’re trying to prevent or control diabetes, there is some good news. You can make a big difference with healthy lifestyle changes. The most important thing you can do for your health is to lose weight—but you don’t have to lose all your extra pounds to start reaping the benefits. […]
+                          a.btn.btn-primary(href='./single.html') Read More
+
+
+
+
+        section#contact.vcenter
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered
+                  h2 Contact Us
+                  p Book an appointment now!
+            .row      
+              .col-md-4.light_section.boxed.wow.slideInLeft
+                h3.col_header.centered QUICK CONTACT
+                include templates/contact-quick
+              .col-md-4.secondary_section.boxed
+                h3.col_header.centered APPOINTMENT
+                include templates/contact-appointment
+              .col-md-4.skincolored_section.boxed.wow.slideInRight(style="background-image:url('./assets/images/timetable_bg.jpg')")
+                h3.col_header.centered WORKING HOURS
+                include templates/timetable-small
+        section.skincolored_section
+          .container
+            .row
+              .col-md-12
+                include templates/newsletter-svg
+      // FOOTER
+      include templates/footer
+
+    include templates/scripts

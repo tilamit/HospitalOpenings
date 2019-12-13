@@ -1,0 +1,32 @@
+
+// =========================== HEADER ==========================
+
+.header
+  .mainbar.gradient.diagonal      
+    .container
+      .logo
+        a.brand(href='index.html')
+          img(src='./assets/images/medicus-header-logo-x64.png', alt='logo')
+        p.animated.slideInLeft Call us Toll free +30 1234-567-890
+      .menu_container
+        span.close_menu &times;
+        include navigation.jade
+      label.mobile_collapser MENU  
+
+      // =========================== SOCIAL ICONS =========================
+
+      a.social_links(title='', href='#')
+        i.fa.fa-share-alt
+
+      .team_social
+        a(href='#'): i.fa.fa-skype
+        a(href='#'): i.fa.fa-facebook
+        a(href='#'): i.fa.fa-twitter
+        a(href='#'): i.fa.fa-linkedin
+
+      // END======================== SOCIAL ICONS ========================= 
+
+.brand-colors
+if ajaxLoader
+  include loader
+// END======================== HEADER ==========================

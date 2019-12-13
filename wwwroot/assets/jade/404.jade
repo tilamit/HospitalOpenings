@@ -1,0 +1,44 @@
+//- CONFIG: ALWAYS INCLUDE
+include config
+
+doctype html
+html(lang="en")
+
+  head
+    block variables
+      - var title = "404"
+    include templates/head.jade
+
+  body.sticky_header
+    include templates/loader.jade
+    .overflow_wrapper
+      include templates/header.jade
+      .head_panel
+        .full_width_photo(style="background-image: url('./assets/images/404.jpg')")
+            .hgroup
+              .title.diagonal-bgcolor-trans
+                .container
+                  h1 OMG! ERROR 404
+              .subtitle.body-bg_section
+                .container    
+                  p.uppercase The requested page cannot be found!
+      .main
+
+        section.margin_top
+          .container
+            .row
+              .col-md-12.section_header.elegant.centered
+                h2 ERROR 404 IS NOTHING TO REALLY WORRY ABOUT...
+                p you may have mis-typed the URL, please check your spelling and try again.
+              .col-md-6.col-md-offset-2
+                  input.form-control(type='text')
+              .col-md-4
+                  button.btn.btn-primary(type='submit') SEARCH
+
+      include templates/footer.jade
+    include templates/scripts.jade
+
+
+
+
+

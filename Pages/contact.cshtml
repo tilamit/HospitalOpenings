@@ -1,0 +1,146 @@
+﻿@page
+@model HospitalOpenings.Pages.contactModel
+@{
+    ViewData["Title"] = "Contact Us ";
+}
+<div class="brand-colors"></div>
+<div class="head_panel parallax-window">
+    <div style="background-image: url('./assets/images/Contact-us-header-image.jpg')" class="full_width_photo">
+        <div class="hgroup">
+            <div class="title diagonal-bgcolor-trans">
+                <div class="container">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+            <div class="subtitle body-bg_section">
+                <div class="container">
+                    <p class="uppercase">Don't hesitate to contact us!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 light_section boxed same_height_col">
+                    <h3 class="col_header centered">QUICK CONTACT</h3>
+                    <!-- =========================  QUICK CONTACT FORM ========================-->
+                    <div class="contact-quick">
+                        <div class="screen-reader-response"></div>
+                        <form id="contact_form" name="contact_form" action="#" method="post" novalidate="novalidate">
+                            <input type="hidden" name="contact_type" value="appointment_form" class="contact_type"><span class="your-name">
+                                <input type="text" name="name" value="Full Name" size="40" aria-required="true" aria-invalid="false" class="name form-control">
+                            </span><span class="your-phone">
+                                <input type="text" name="phone" value="Phone Number" size="40" aria-required="true" aria-invalid="false" class="phone form-control">
+                            </span><span class="your-email">
+                                <input type="email" name="email" value="Email" size="40" aria-required="true" aria-invalid="false" class="email form-control">
+                            </span><span class="your-subject">
+                                <input type="text" name="subject" value="Subject" size="40" aria-required="true" aria-invalid="false" class="subject form-control">
+                            </span><span class="your-message">
+                                <textarea name="message" cols="40" rows="4" aria-invalid="false" class="message form-control">Message</textarea>
+                            </span>
+                            <div class="captcha">
+                                <div style="background-image:url('./assets/php/contact/captcha.php')" class="captcha-code"></div>
+                                <input type="text" name="captchainput" value="Enter Code" aria-required="true" aria-invalid="false" class="captchainput form-control">
+                            </div>
+                            <input type="submit" name="submit" value="Submit" class="submit_btn btn btn-primary">
+                            <div class="notice btn btn-metro alert alert-warning alert-dismissable hidden"></div><img src="./assets/images/ajax-loader.gif" alt="Sending ..." class="ajax-loader not_visible">
+                        </form>
+                    </div>
+                    <!-- /.contact-quick-->
+                    <!-- =========================  QUICK CONTACT FORM ========================-->
+                </div>
+
+
+                <div class="col-md-4 skincolored_section boxed same_height_col centered">
+                    <!--h3.col_header.centered Medicus--><img src="./assets/images/medicus-header-logo-x64.png" alt="logo" height="33">
+                    <h4><strong>Customer Support</strong></h4>
+                    <p><strong>info@HospitalOpenings.com</strong></p>
+                    <h4><strong>Phones</strong></h4>
+                    <p><a href="#" class="btn btn-secondary">EMAIL US</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-test.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Nursing Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        Registered nurses (RNs) care for patients by treating and educating them about various medical ailments. The largest group of RNs work as staff nurses in hospitals
+
+                                    </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="states_cities"><img src="./assets/images/strive-lungs.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Doctor Jobs </h4>
+                                </div>
+                                <div class="desc">
+                                    <p>From 2014 to 2024, the U.S. Bureau of Labor Statistics (BLS) expected job opportunities for physicians and surgeons to increase by 14%, much faster than that of most other occupations </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>MORE</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><a href="states_cities"><img src="./assets/images/strive-cardiology.png" height="100" alt="service"></a></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Pharmacy Tech Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>Work under the supervision of a licensed pharmacist and are responsible for dispensing medications. Training for a pharmacy technician job is available. </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END================= SERVICE BOX ===================-->
+                    <!-- ==================== SERVICE BOX ===================-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                            <div class="figure"><img src="./assets/images/strive-dna.png" height="100" alt="service"></div>
+                            <div class="content">
+                                <div class="hgroup">
+                                    <h4>Entry Level Jobs</h4>
+                                </div>
+                                <div class="desc">
+                                    <p>There are several options for behind the scene entry level medical jobs that require varying levels of education and range in their required duties. </p>
+                                </div>
+                                <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

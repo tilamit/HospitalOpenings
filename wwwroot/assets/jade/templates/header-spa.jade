@@ -1,0 +1,32 @@
+
+// =========================== HEADER ==========================
+
+.header
+  .mainbar 
+    .container
+      .logo
+        a.brand(href='spa_index.html')
+          img(src='./assets/images/spa/spa-salon-logo.png', alt='logo')
+        p.animated.slideleft.title-space A HEALTH-X Variation
+      .menu_container
+        span.close_menu &times;
+        include navigation-spa.jade
+      label.mobile_collapser MENU  
+
+      // =========================== SOCIAL ICONS =========================
+
+      a.social_links(title='', href='#')
+        i.fa.fa-share-alt
+
+      .team_social
+        a(href='#'): i.fa.fa-skype
+        a(href='#'): i.fa.fa-facebook
+        a(href='#'): i.fa.fa-twitter
+        a(href='#'): i.fa.fa-linkedin
+
+      // END======================== SOCIAL ICONS ========================= 
+
+.brand-colors  
+if ajaxLoader
+  include loader
+// END======================== HEADER ==========================

@@ -1,0 +1,36 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var doubleHelix = true
+- var isotope     = true
+- var lightbox    = true
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Educational Videos"
+    include templates/head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .main
+        section
+          .container
+            .row
+              .col-md-12.section_header.fancy.centered
+                h2 Educational Videos
+                p Place your YouTube/Vimeo/Dailymotion videos, Images and Links to Pages in the Portfolio Section.
+              .col-md-12
+                include templates/portfolio-grid
+        section.skincolored_section
+            .container
+              .row
+                .col-md-12
+                  include templates/newsletter-svg
+      // FOOTER
+      include templates/footer
+
+    include templates/scripts

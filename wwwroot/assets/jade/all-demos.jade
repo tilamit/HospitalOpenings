@@ -1,0 +1,88 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var demoMode    = false
+//-====================================
+
+doctype html
+html(lang="en")
+
+  head
+    block variables
+      - var title = "HEALTH-X | All Demos Page"
+    include templates/head.jade
+  body.sticky_header
+    .overflow_wrapper
+      .brand-colors 
+      .main
+        // ================================== Section ==================================
+        //- Available classes: None, full_width, fluid_width, full_height, light_section, dark_section, vertical_bottom, vertical_center, 
+        section#home.transparent-film.black_section.centered(style="background-image: url('./assets/images/demos_page/1.jpg')")
+          .container
+            .row
+              .col-md-12
+                .caption.caption-fancy
+                  .inner
+                    p
+                      img(src='./assets/images/logo-white-alpha.png', alt="logo")
+                    .t1 HEALTH-X              
+                    .t2.uppercase Power & Flexibility Combined
+                    //.t3.uppercase HTML Framework for the Health & Beauty Industry
+              .col-md-8.col-md-offset-2   
+                p.lead.margin_top_half.
+                  Health-X is a Design Framework that lets you build various layouts for any "Health & Beauty" related business!
+                a.btn.btn-secondary.margin_top_half.scrollify(href="#demos") Check Out All Demos
+        // ================================== Section ==================================
+        
+        // ================================== Section ==================================
+        //- Available classes: None, full_width, fluid_width, full_height, light_section, dark_section, vertical_bottom, vertical_center, 
+        section#demos.white_section.centered
+          .container
+            .row
+              .col-md-4
+                h4.col_header.no_margin_bottom Medical Clinic
+                p.small Multi-Pager
+                .demo_item.stretchy-wrapper
+                  a.stretchy-wrapper(style="background-image: url('./assets/images/demos_page/medicus.jpg')", href="index.html", target="_blank")
+              .col-md-4
+                h4.col_header.no_margin_bottom Spa Salon
+                p.small One-Pager
+                .demo_item.stretchy-wrapper
+                  a.stretchy-wrapper(style="background-image: url('./assets/images/demos_page/spa_salon.jpg')", href="spa_index.html", target="_blank") 
+              .col-md-4
+                h4.col_header.no_margin_bottom Fitness Center
+                p.small One-Pager
+                .demo_item.stretchy-wrapper
+                  a.stretchy-wrapper(style="background-image: url('./assets/images/demos_page/fitness.jpg')", href="fitness-one-pager.html", target="_blank")
+        section.white_section.centered.no_padding_top
+          .container            
+            .row
+              .col-md-4
+                //- h4.col_header.no_margin_bottom Health Professional
+                //- p.small One-Pager
+                //- .demo_item.stretchy-wrapper
+                //-   a.stretchy-wrapper(style="background-image: url('')", href="one-pager.html", target="_blank")
+              //- .col-md-4
+              //-   h4.col_header.no_margin_bottom Vet Clinic
+              //-   p.small Coming Soon
+              //-   .demo_item.stretchy-wrapper
+              //-     a.stretchy-wrapper(style="background-image: url('')", href="#", target="_blank") 
+              .col-md-4
+                h4.col_header.no_margin_bottom More...
+                p.small Coming Soon
+                .demo_item.stretchy-wrapper
+                  a.stretchy-wrapper(style="background-image: url('')", href="#", target="_blank")         
+
+        // ================================== Section ==================================
+        //- Available classes: None, full_width, fluid_width, full_height, light_section, dark_section, vertical_bottom, vertical_center, 
+        section.secondary_section.centered
+          .container
+            .row
+              .col-md-12
+                .section_header.fancy
+                  h3 Did you like this?
+                p
+                  a.btn.btn-lg.btn-danger(href="http://themeforest.net/item/medicus-medical-business-multipurpose-html/11590438") Purchase on Themeforest                             
+                
+    include templates/scripts.jade

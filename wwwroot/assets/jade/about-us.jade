@@ -1,0 +1,91 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var owlSlider   = true
+- var twitterFeed = true
+- var ajaxLoader  = true     
+- var parallax    = true    
+- var particles   = true 
+//-====================================
+
+doctype html
+html(lang="en")
+
+  head
+    block variables
+      - var title = "About us"
+    include templates/head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .full_width_photo.parallax-window(style="background-image: url('./assets/images/slider-6.jpg')")
+            .hgroup
+              .title.diagonal-bgcolor-trans
+                .container
+                  h1 About us
+              .subtitle.body-bg_section
+                .container    
+                  p.uppercase We are a medical clinic
+      .main
+        section.vcenter
+          .container
+            .row
+              .col-sm-12.col-md-6
+                p.
+                  Our team strives to achieve excellence in every aspect of the production process, from the preliminary hand-drawn sketches to the aftersales support. We carefully design our themes to be easy and flexible while making sure that most FAQ of our customers can be answered by our 
+                  detailed documentation.
+                p.
+                  We focus on using the latest web standards and practices regarding UX guidelines and WordPress theme development and strongly encourage our customers to follow us on this. The use of a child theme and the plugin-based development of ©Plethora Framework ensure hassle-free updates and peace of mind.
+                p.
+                  Personalized patient care is what sets California Pacific Medical Center apart. When you visit one of our four San Francisco campus locations you can expect to receive world class care. Expert physician specialists and caring clinical staff provide you with an exceptional health care experiene.
+              .col-sm-12.col-md-6
+                .video_iframe.stretchy-wrapper.ratio_16-9
+                    iframe(src='http://player.vimeo.com/video/67157062?title=0&byline=0&portrait=0')  
+        section.dark_section.margin_bottom
+          .container
+            .row
+              .col-md-12.section_header.thin
+                h2 DEPARTMENTS
+                p Each one may link to its own page
+              include templates/departments
+        section.no_top_padding
+          .container
+            .row
+              .col-md-12.section_header.thin
+                h2 MEET OUR DEVOTED STAFF
+                p If you click on them, you can find details
+              .col-md-12  
+                include templates/team-members
+        section.secondary_section.particles-js
+          .container
+            .row
+              .col-md-12.section_header.thin.centered
+                h3
+                  i.fa.fa-heartbeat.danger
+                  |  Hear what our <strong>patients</strong> say
+                p Testimonials Slider Feature
+              .col-md-8.col-md-offset-2  
+                include templates/testimonial-slider
+        section
+          .container
+            .row
+              .col-md-12.section_header.thin.centered
+                h3 Our <strong>scientific</strong> associates
+                p we' ve built a long standing relationship based on trust
+              include templates/clients
+
+        section.skincolored_section
+          .container
+            .row
+              .col-md-12
+                include templates/twitter
+
+      include templates/footer
+    include templates/scripts.jade
+
+
+
+
+

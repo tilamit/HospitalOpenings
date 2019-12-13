@@ -1,0 +1,34 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Bootstrap Components"
+    include templates/head.jade
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header.jade
+      // MAIN AREA + SECTIONS
+      .main
+        include templates/bs-jumbotron.jade
+        include templates/bs-typography.jade
+        include templates/bs-indicators.jade
+        include templates/bs-tables.jade
+        include templates/bs-containers.jade
+        include templates/bs-media.jade
+        include templates/bs-pagination.jade
+        include templates/bs-forms.jade
+        // UNFINISHED SECTIONS
+        //- include templates/bs-progress-bars.jade
+        //- include templates/bs-buttons.jade
+        //- include templates/bs-navs.jade
+        //- include templates/bs-modals.jade
+      // FOOTER
+      include templates/footer.jade
+
+    include templates/scripts.jade
+

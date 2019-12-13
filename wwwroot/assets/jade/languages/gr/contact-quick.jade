@@ -1,0 +1,28 @@
+
+// =========================  QUICK CONTACT FORM ========================
+
+.contact-quick.contact-quick-transparent
+  h3.col_header.centered ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ
+  .screen-reader-response
+  form#contact_form(name='contact_form', action='#', method='post', novalidate='novalidate')
+    input#contact_type(type='hidden' name='contact_type' value='appointment_form')
+    span.your-name
+      input#name.form-control(type='text', name='name', value='Ονοματεπώνυμο', size='40', aria-required='true', aria-invalid='false')
+    span.your-phone
+      input#phone.form-control(type='text', name='phone', value='Τηλέφωνο', size='40', aria-required='true', aria-invalid='false')
+    span.your-email
+      input#email.form-control(type='email', name='email', value='Email', size='40', aria-required='true', aria-invalid='false')
+    span.your-subject
+      input#subject.form-control(type='text', name='subject', value='Θέμα', size='40', aria-required='true', aria-invalid='false')
+    span.your-message
+      textarea#message.form-control(name='message', cols='40', rows='4', aria-invalid='false') Μήνυμα
+    .captcha
+      .captcha-code(style="background-image:url('./assets/php/contact/captcha.php')")
+      input#captcha.form-control(type='text', name='captcha', value='Εισάγετε τα ψηφία', aria-required='true', aria-invalid='false')
+    input#submit_btn.btn.btn-primary(type='submit', name='submit', value='Αποστολη')
+    #notice.btn.btn-metro.alert.alert-warning.alert-dismissable.hidden
+    img.ajax-loader(src='./assets/images/ajax-loader.gif', alt='Αποστολή ...', style='visibility: hidden;')
+// /.contact-quick
+
+// =========================  QUICK CONTACT FORM ========================
+

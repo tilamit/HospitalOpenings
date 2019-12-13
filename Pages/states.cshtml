@@ -1,0 +1,195 @@
+﻿@page "{handler?}"
+@model HospitalOpenings.Pages.statesModel
+@{
+    ViewData["Title"] = "State By State ";
+}
+
+<div class="brand-colors"></div>
+
+<div class="head_panel parallax-window">
+    <div style="background-image: url('./assets/images/slider-4.jpg')" class="full_width_photo">
+        <div class="hgroup">
+            <div class="title diagonal-bgcolor-trans">
+                <div class="container">
+                    <h1>Hospital Jobs and Info</h1>
+                </div>
+            </div>
+            <div class="subtitle body-bg_section">
+                <div class="container">
+                    <p class="uppercase">Available States and Areas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <section>
+    </section>
+</div>
+
+<section class="vcenter no_top_padding">
+    <div class="container">
+        <div class="row">
+            <!-- ====================== HORIZONTAL IMAGE COMPARE =====================-->
+
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr class="info">
+                        <th><a href="states_cities?page_id=#AL">Alabama</a></th>
+                        <th><a href="states_cities?page_id=#AK">Alaska</a></th>
+                        <th><a href="states_cities?page_id=#AZ">Arizona</a></th>
+                        <th><a href="states_cities?page_id=#AL">Arkansas</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active">
+                        <th><a href="states_cities?page_id=#CA">California</a></th>
+                        <th><a href="states_cities?page_id=#CAN">Canada</a></th>
+                        <th><a href="states_cities?page_id=#CO">Colorado</a></th>
+                        <th><a href="states_cities?page_id=#CT">Connect.</a></th>
+                    </tr>
+                    <tr class="success">
+                        <th><a href="states_cities?page_id=#DE">Delaware</a></th>
+                        <th><a href="states_cities?page_id=#DC">DC Wash.</a></th>
+                        <th><a href="states_cities?page_id=#FL">Florida</a></th>
+                        <th><a href="states_cities?page_id=#GA">Georgia</a></th>
+                    </tr>
+                    <tr class="danger">
+                        <th><a href="states_cities?page_id=#HI">Hawaii</a></th>
+                        <th><a href="states_cities?page_id=#ID">Idaho</a></th>
+                        <th><a href="states_cities?page_id=#IL">Illinois</a></th>
+                        <th><a href="states_cities?page_id=#IN">Indiana</a></th>
+                    </tr>
+                    <tr class="warning">
+                        <th><a href="states_cities?page_id=#IA">Iowa</a></th>
+                        <th><a href="states_cities?page_id=#KS">Kansas</a></th>
+                        <th><a href="states_cities?page_id=#KY">Kentucky</a></th>
+                        <th><a href="states_cities?page_id=#LA">Lousiana</a></th>
+                    </tr>
+                    <tr class="info">
+                        <th><a href="states_cities?page_id=#ME">Maine</a></th>
+                        <th><a href="states_cities?page_id=#MD">Maryland</a></th>
+                        <th><a href="states_cities?page_id=#MA">Mass.</a></th>
+                        <th><a href="states_cities?page_id=#MI">Michigan</a></th>
+                    </tr>
+                    <tr class="active">
+                        <th><a href="states_cities?page_id=#MN">Minnesota</a></th>
+                        <th><a href="states_cities?page_id=#MS">Mississippi</a></th>
+                        <th><a href="states_cities?page_id=#MI">Missouri</a></th>
+                        <th><a href="states_cities?page_id=#MT">Montana</a></th>
+                    </tr>
+                    <tr class="success">
+                        <th><a href="states_cities?page_id=#">Nebraska</a></th>
+                        <th><a href="states_cities?page_id=#NV">Nevada</a></th>
+                        <th><a href="states_cities?page_id=#NH">New Hampshire</a></th>
+                        <th><a href="states_cities?page_id=#NJ">New Jersey</a></th>
+                    </tr>
+                    <tr class="success">
+                        <th><a href="states_cities?page_id=#NM">New Mexico</a></th>
+                        <th><a href="states_cities?page_id=#NY">New York</a></th>
+                        <th><a href="states_cities?page_id=#NC">North Carolina</a></th>
+                        <th><a href="states_cities?page_id=#ND">North Dakota</a></th>
+                    </tr>
+                    <tr class="warning">
+                        <th><a href="states_cities?page_id=#OH">Ohio</a></th>
+                        <th><a href="states_cities?page_id=#OK">Oklahoma</a></th>
+                        <th><a href="states_cities?page_id=#OR">Oregon</a></th>
+                        <th><a href="states_cities?page_id=#PA">Penn.</a></th>
+                    </tr>
+                    <tr class="info">
+                        <th><a href="states_cities?page_id=#RI">Rhode Island</a></th>
+                        <th><a href="states_cities?page_id=#SC">South Carolina</a></th>
+                        <th><a href="states_cities?page_id=#SD">South Dakota</a></th>
+                        <th><a href="states_cities?page_id=#TN">Tennessee</a></th>
+                    </tr>
+                    <tr class="active">
+                        <th><a href="states_cities?page_id=#TX">Texas</a></th>
+                        <th><a href="states_cities?page_id=#UT">Utah</a></th>
+                        <th><a href="states_cities?page_id=#VA">Virginia</a></th>
+                        <th><a href="states_cities?page_id=#VT">Vermont</a></th>
+                    </tr>
+                    <tr class="success">
+                        <th><a href="states_cities?page_id=#WA">Washington</a></th>
+                        <th><a href="states_cities?page_id=#WV">West Virginia</a></th>
+                        <th><a href="states_cities?page_id=#WI">Wisconsin</a></th>
+                        <th><a asp-page="states_cities" asp-route-id="WY">Wyoming</a></th>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- END=================== HORIZONTAL IMAGE COMPARE =====================-->
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                        <div class="figure"><img src="./assets/images/strive-test.png" height="100" alt="service"></div>
+                        <div class="content">
+                            <div class="hgroup">
+                                <h4>Nursing Jobs</h4>
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Registered nurses (RNs) care for patients by treating and educating them about various medical ailments. The largest group of RNs work as staff nurses in hospitals
+
+                                </p>
+                            </div>
+                            <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== SERVICE BOX ===================-->
+                <div class="col-sm-6 col-md-3">
+                    <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                        <div class="figure"><a href="states_cities"><img src="./assets/images/strive-lungs.png" height="100" alt="service"></a></div>
+                        <div class="content">
+                            <div class="hgroup">
+                                <h4>Doctor Jobs </h4>
+                            </div>
+                            <div class="desc">
+                                <p>From 2014 to 2024, the U.S. Bureau of Labor Statistics (BLS) expected job opportunities for physicians and surgeons to increase by 14%, much faster than that of most other occupations </p>
+                            </div>
+                            <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>MORE</strong>  </a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END================= SERVICE BOX ===================-->
+                <!-- ==================== SERVICE BOX ===================-->
+                <div class="col-sm-6 col-md-3">
+                    <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                        <div class="figure"><a href="states_cities"><img src="./assets/images/strive-cardiology.png" height="100" alt="service"></a></div>
+                        <div class="content">
+                            <div class="hgroup">
+                                <h4>Pharmacy Tech Jobs</h4>
+                            </div>
+                            <div class="desc">
+                                <p>Work under the supervision of a licensed pharmacist and are responsible for dispensing medications. Training for a pharmacy technician job is available. </p>
+                            </div>
+                            <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END================= SERVICE BOX ===================-->
+                <!-- ==================== SERVICE BOX ===================-->
+                <div class="col-sm-6 col-md-3">
+                    <div class="teaser_box centered same_height_col white_section boxed boxed-special">
+                        <div class="figure"><img src="./assets/images/strive-dna.png" height="100" alt="service"></div>
+                        <div class="content">
+                            <div class="hgroup">
+                                <h4>Entry Level Jobs</h4>
+                            </div>
+                            <div class="desc">
+                                <p>There are several options for behind the scene entry level medical jobs that require varying levels of education and range in their required duties. </p>
+                            </div>
+                            <div class="link"><a href="states_cities" class="btn btn-sm btn-primary"><strong>DETAILS</strong>  </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,128 @@
+@import 'style.less';
+
+//== General Colors
+
+@brand-primary: #53B0A6;
+@brand-secondary: #092C38;
+@body-bg: #EFEFEF;
+@text-color: #323232;
+@link-color: #53B0A6;
+@link-hover-color: lighten(@link-color, 5%);
+
+//== Sections Colors
+
+@skin-section-linkcolor       : #092C38;
+@skin-section-linkcolor-hover : darken(@skin-section-linkcolor, 15%);
+@skin-section-txtcolor        : #ffffff;
+
+@secondary-section-linkcolor       : @brand-primary;
+@secondary-section-linkcolor-hover : darken(@secondary-section-linkcolor, 15%);
+@secondary-section-txtcolor        : #ffffff;
+
+@light-section-bgcolor         : #fdfdfd;
+@light-section-linkcolor       : #1c92b9;
+@light-section-linkcolor-hover : darken(@light-section-linkcolor, 15%);
+@light-section-txtcolor        : #323232;
+
+@dark-section-bgcolor         : #222D3F;
+@dark-section-linkcolor       : @brand-primary;
+@dark-section-linkcolor-hover : darken(@dark-section-linkcolor, 15%);
+@dark-section-txtcolor        : #ffffff;
+
+@black-section-linkcolor       : @brand-primary;
+@black-section-linkcolor-hover : darken(@black-section-linkcolor, 15%);
+
+@footer-bgcolor         : darken(@brand-secondary, 5%);
+@footer-linkcolor       : @brand-primary;
+@footer-linkcolor-hover : lighten(@footer-linkcolor, 15%);
+@footer-txtcolor        : #ffffff;
+
+//== Transparencies
+
+@section-background-transparency: 50;
+
+//== Typography
+
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; //wp
+@font-family-alternative: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; //wp
+
+@font-size-base:          			  15px; 
+@font-size-alternative-base:          14px;
+
+@font-size-h1:            floor((@font-size-alternative-base * 2.6));
+@font-size-h2:            floor((@font-size-alternative-base * 1.8));
+@font-size-h3:            floor((@font-size-alternative-base * 1.6));
+@font-size-h4:            floor((@font-size-alternative-base * 1.2));
+@font-size-h5:            @font-size-alternative-base;
+@font-size-h6:            ceil((@font-size-alternative-base * 0.85));
+
+//== Layout
+
+@logo_img_max_height: 28px;
+@logo_img_max_height-sm: 28px;
+@logo_img_max_height-xs: 28px;
+
+@logo-vertical-margin: 15px;
+@logo-vertical-margin-sm: 10px;
+@logo-vertical-margin-xs: 10px;
+
+@section-vertical-padding: 48px;
+
+// DEMO SPECIFIC CSS
+
+.header {
+  border-bottom: 1px solid fade(@brand-primary,  70%) !important;
+}
+
+.intro-paragraph {
+	font-size: @font-size-base + 1;
+	line-height: @line-height-base * 1.08;
+}
+
+.vertical-divider:after {
+	content:'';
+	display: block;
+	width: 1px;
+	height: 50px;
+	background-color: #ccc;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	margin-top: 20px;
+}
+
+.section_header p {
+	text-transform: uppercase;
+}
+
+.title-space {
+  letter-spacing: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+}
+
+.testimonial-slider ul.slides .author{
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	text-align: center;	
+}
+
+footer {
+  padding: 76px 0;
+}
+
+.pl_about_us_widget i {
+	border-radius: 50%;
+}
+
+.widget h4 {
+	padding-bottom: 10px;
+}
+
+p.contact_detail {
+	margin-bottom: 7px !important;
+}

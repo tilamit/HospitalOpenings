@@ -1,0 +1,30 @@
+
+// ========================= APPOINTMENT FORM ========================
+
+.appointment
+  form#appointment_form(name='appointment_form', action='#', method='post', novalidate='novalidate')
+    input.contact_type(type='hidden' name='contact_type' value='appointment_form')
+    select.department(name='department')
+      option(value='') DEPARTMENT
+      option(value='Pathology') Pathology
+      option(value='XRay') X-Ray
+      option(value='Gynecology') Gynecology
+    input.name.form-control(type='text', name='name', value='Full Name', size='40', aria-required='true', aria-invalid='false')
+    input.hidden.birthdate.form-control(type='text', name='birthdate', value='Date of Birth', size='40', aria-required='true', aria-invalid='false')
+    select.hidden.sex(name='sex')
+      option(value='') SEX
+      option(value='Female') Female
+      option(value='Male') Male
+      option(value='Child') Child
+    input.hidden.phone.form-control(type='text', name='phone', value='Phone Number', size='40', aria-required='true', aria-invalid='false')
+    input.email.form-control(type='email', name='email', value='Email', size='40', aria-required='true', aria-invalid='false')
+    input.appointment_date.form-control(type='text', name='appointment_date', value='Appointment Date', size='40', aria-required='true', aria-invalid='false')
+    textarea.message.form-control(name='message', cols='40', rows='4', aria-invalid='false') Message
+    .captcha
+      .captcha-code(style="background-image:url('./assets/php/contact/captcha.php')")
+      input.captchainput.form-control(type='text', name='captchainput', value='Enter Code', aria-required='true', aria-invalid='false')
+    input.submit_btn.btn.btn-primary(type='submit', name='submit', value='Submit')
+    .notice.btn.btn-primary.alert.alert-warning.alert-dismissable.hidden
+    img.ajax-loader.not_visible(src='./assets/images/ajax-loader.gif', alt='Sending')
+
+// END====================== APPOINTMENT FORM ========================

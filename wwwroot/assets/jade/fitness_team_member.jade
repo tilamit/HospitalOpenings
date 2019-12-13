@@ -1,0 +1,52 @@
+//- CONFIG: ALWAYS INCLUDE
+include config
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Team Member Bio"
+    include templates/fitness-head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/fitness-header
+      .main
+        section
+          .container
+            .row
+              .col-sm-6.col-md-5
+                img(alt="doctor", src="./assets/images/fitness/fitness_trainer_1.jpg")
+                blockquote
+                  p
+                    i The best things in life come to those who take care of their health...
+                .team_social.show
+                  a(href='mailto:'): i.fa.fa-envelope
+                  a(href='callto:#'): i.fa.fa-skype
+                  a(href='#'): i.fa.fa-facebook
+                  a(href='#'): i.fa.fa-google-plus
+                  a(href='#'): i.fa.fa-youtube
+                  a(href='#'): i.fa.fa-twitter
+                  a(href='#'): i.fa.fa-pinterest
+              .col-sm-6.col-md-7
+                .section_header.xbold
+                  h2 Ms. Linda Evans
+                  p Fitness trainer          
+                p
+                  | The image is put here as is. While it seems like an easy task, swallowing a pill is something that many adults and children have great difficulty doing. The fear of gagging causes the throat to tighten up so that pill stays in your mouth until you spit it out. Fortunately, there are various ways to approach the problem so that you can relax, overcome the fear of choking, and just let the pill easily slide down. It's like riding a bike - once you get the hang of it, it becomes second nature. […]
+                p
+                  | Duis est enim, 
+                  a.roll(href="#") hover here for 3d effect 
+                  | sollicitudin ut, mattis interdum quam.   Ut euismod libero nec orci vulputate lobortis. Class aptent taciti   sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.   Phasellus sit amet nisi at tortor lacinia sodales. Vestibulum ante ipsum   primis in faucibus orci luctus et ultrices 
+                  a.roll(href="#") hover here for 3d effect
+                  | posuere cubilia Curae;   Aliquam fringilla eleifend purus sed lobortis. Sed sapien sapien,   pulvinar et lacinia nec, scelerisque vitae elit. Mauris quis purus   ligula. Etiam tristique scelerisque urna in ultricies.
+                p
+                  | Pellentesque iaculis eleifend turpis, at pharetra enim blandit eu.   Aenean malesuada dignissim venenatis. Ut enim nulla, auctor a molestie   in, sagittis non lorem. Praesent 
+                  a.roll(href="#") hover here for 3d effect
+                  | fermentum mollis purus eu elementum.   Etiam tristique pellentesque ornare. Fusce consequat blandit adipiscing.   Mauris tincidunt iaculis aliquam. Nam pulvinar mollis augue, id ornare   dolor dictum et. Ut mauris mauris, dapibus eu elementum nec, sagittis   vitae sem. Etiam non elementum tellus. Donec vitae facilisis eros.   Phasellus eleifend mattis aliquam. Etiam quam libero, volutpat vitae   fringilla vel, euismod non lacus.
+                p
+                  | Nulla diam odio, dictum adipiscing rhoncus rhoncus, pulvinar scelerisque   tortor. Maecenas a augue lacus, eget pellentesque ante. In bibendum,   nisl nec posuere fringilla, ante justo varius sem, sed dictum leo sapien   eu quam. Vivamus varius odio quis elit iaculis a 
+                  a.roll(href="#") hover here for 3d effect
+                  | sagittis dolor   ultricies. Quisque ut nisi ut nibh rutrum commodo. Nunc ut laoreet   libero. Maecenas pellentesque elementum mauris quis interdum.
+                    
+      include templates/fitness-footer
+    include templates/scripts

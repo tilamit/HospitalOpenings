@@ -1,0 +1,58 @@
+//- CONFIG: ALWAYS INCLUDE
+include config
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Service Details"
+    include templates/head-spa
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header-spa
+      .main
+        section.no_padding.secondary_section
+          .container
+            .row
+              .col-md-12
+                .stretchy-wrapper.ratio_5-1(style="background-image: url('./assets/images/spa/spa-big-2.jpg')").secondary_section.gradient-film-to-top
+        section.secondary_section
+          .container
+            .row
+              .col-md-3
+              .col-md-6
+                .section_header.fancy
+                  h2 MASSAGE THERAPY
+                  p Our most featured sensation
+              .col-md-3
+            .row    
+              .col-md-3.text-right
+                p OVERVIEW
+              .col-md-6.margin_bottom_half
+                p Allow the essential oils of the Signature Desert Rose to transform your senses and bring you into a deep state of centered bliss. Rest as a healing desert mist embraces you. Then journey into absolute calm as pure desert inspired essential oils rain along your feet and spine, bringing you closer to detoxification and renewal. Allow one of our highly trained therapists to soothe away any remaining tension with a harmonizing and personalized bodywork sequence. Discover balance and deep relaxation with this transcendent experience.
+              .col-md-3
+            .row
+              .col-md-3.text-right
+                p FEATURES
+              .col-md-6.margin_bottom_half
+                ul
+                  li Customized Aromatherapy Massage
+                  li Rhythmic Stone Massage
+                  li Integrative Massage
+                  li Deep Tissue Massage
+                  li HEALTHx Signature Massage
+                  li Customized Aromatherapy Massage
+                  li Rhythmic Stone Massage
+                  li Integrative Massage
+                  li Deep Tissue Massage
+                  li HEALTHx Signature Massage
+              .col-md-3
+            .row
+              .col-md-3.text-right
+                p PRICE
+              .col-md-6.margin_bottom
+                p <strong>$60</strong> / HOUR - <strong>$200</strong> / 4 HOURS 
+              .col-md-3           
+
+      include templates/footer-spa
+    include templates/scripts

@@ -1,0 +1,199 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var owlSlider        = true
+- var parallax         = true     
+- var newsletter       = true
+- var contactForm      = true
+- var googleMaps      = true
+- var ajaxLoader  = true 
+- var isotope     = true
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Health-X Spa Salon"
+    include templates/head-spa
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header-spa
+      include templates/headpanel-slider-full-height-spa
+      .main
+        section#about-us.centered
+          .container
+            .row
+              .col-md-12.section_header.fancy
+                h2 ABOUT US
+                p A place to experience the true power of massage
+              .col-md-8.col-md-offset-2
+                  p.intro-paragraph Our appear may behold bearing years. <strong>Nature products</strong>. Grass kind let i there that shall. Uponle divide,  this thing unto seas. From you'll lesser.  <strong>Globally supported</strong> divide moving dry saw day sixth shall. <strong>Good health</strong> female replenish creature. Dry divide you're. Forth be land.
+                  span.pl_divider.vertical-divider
+                  h4 <strong> Check out our latest Video Tour! </strong>
+                  hr
+                  .video_iframe.stretchy-wrapper.ratio_16-9
+                      iframe(src='http://player.vimeo.com/video/67157062?title=0&byline=0&portrait=0')  
+                      
+        section.dark_section.centered#services
+            .container
+                .row
+                    .col-md-12
+                        .section_header.fancy
+                            h2 Services
+                            p Relax and enjoy some time for yourself
+
+                .row                  
+                  .col-md-4.boxed_plus.dark_section.transparent-film
+                    .stretchy-wrapper.ratio_16-9.margin_bottom_half(style="background-image: url('assets/images/spa/spa-small-4.jpg');")
+                    .section_header.elegant
+                      h4 TRIPLE BODY BOOST
+                      p $45 / MEETING
+                    p Unveil glowing new skin with this natural 20% peel and anti-aging peptide facial. A combination of acids is used to exfoliate.
+                    a(href="#contact").btn.btn-link.scrollify
+                      small ORDER NOW &raquo;
+                    a.linkify(href="spa_service_details.html").btn.btn-link
+                      small DETAILS &raquo;
+                  
+                  .col-md-4.boxed_plus.dark_section.transparent-film
+                    .stretchy-wrapper.ratio_16-9.margin_bottom_half(style="background-image: url('assets/images/spa/spa-small-1.jpg');")
+                    .section_header.elegant  
+                      h4 HANDS CARE
+                      p $70 / MEETING
+                    p Enjoy the chef’s crafted tropical martini while you pamper and polish yourself with our popular Hand and Feet Retreat.
+                    a(href="#contact").btn-link.scrollify
+                      small ORDER NOW &raquo;
+                    a.linkify(href="spa_service_details.html").btn.btn-link
+                      small DETAILS &raquo;
+
+                  .col-md-4.boxed_plus.dark_section.transparent-film
+                    .stretchy-wrapper.ratio_16-9.margin_bottom_half(style="background-image: url('assets/images/spa/spa-small-3.jpg');")
+                    .section_header.elegant  
+                      h4 AROMATOTHERAPY
+                      p $100 / HOUR
+                    p The active pumpkin enzymes help to exfoliate dead skin cells, reduce pigmentation, fine lines and sun damage.
+                    a(href="#contact").btn-link.scrollify
+                      small ORDER NOW &raquo;
+                    a.linkify(href="spa_service_details.html").btn.btn-link
+                      small DETAILS &raquo; 
+        
+        section.dark_section.centered
+            .container
+                .row
+                    .col-md-12
+                        .section_header.fancy
+                            h3 and more...
+                            p Wish for a special treatment? Here you go!               
+                        
+
+        section.full_width.no_padding.dark_section.vcenter
+          .container
+
+            .row
+              .col-md-6
+                .row
+                  .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2.padding_top.padding_bottom
+                    .section_header.elegant
+                      h3 Essential Skin care
+                      p $90 / MEETING
+                    p.
+                      For clean skin and a radiant complexion, the signature facial revitalizes skin and restores its tone and vitality in a balancing atmosphere of essential oils, antioxidants and great skin care. The result is a face that is hydrated, purified and deep cleansed.
+                    a(href="#contact").btn-link
+                      small ORDER NOW &raquo;
+                    a(href="spa_service_details.html").btn.btn-link.linkify
+                      small DETAILS &raquo;   
+              .col-md-6.no_padding
+                .stretchy-wrapper(style="background-image: url('./assets/images/spa/spa-big-1.jpg')").skincolored_section.transparent-film
+
+
+        section.full_width.no_padding.dark_section.vcenter
+          .container
+
+            .row
+              .col-md-6.col-md-push-6
+                .row
+                  .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2.padding_top.padding_bottom
+                    .section_header.elegant
+                      h3 Massage Therapy
+                      p $50 / HOUR
+                    ul
+                        li Customized Aromatherapy Massage
+                        li Rhythmic Stone Massage
+                        li Integrative Massage
+                        li Deep Tissue Massage
+                        li HEALTHx Signature Massage
+                    a(href="#contact").btn-link
+                      small ORDER NOW &raquo;
+                    a(href="spa_service_details.html").btn.btn-link.linkify
+                      small DETAILS &raquo;   
+              .col-md-6.no_padding.col-md-pull-6
+                .stretchy-wrapper(style="background-image: url('./assets/images/spa/spa-big-2.jpg')").skincolored_section.transparent-film        
+
+        section#blog
+          .container
+            .row
+              .col-md-12
+                .section_header.fancy.centered
+                    h2  Our stories
+                    p STORIES FROM CLIENTS, TRAINERS AND HEALTH-X SPA SALON  
+                .row
+                    .col-md-8.margin_bottom_grid
+
+                        .pl_image_post.skincolored_section.gradient-film-to-top.neutralize_links(style="background-image: url('./assets/images/spa/spa-figure-1.jpg')")
+                            .stretchy-wrapper.ratio_1-1
+                            a.pl_image_post_content.linkify(href="spa_blog_post.html")
+                                .section_header.elegant
+                                    h3 The Aromatotherapy
+                                    p 6 June 2015
+                                .desc    
+                                    p Massage involves working and acting on the body with pressure – structured, unstructured...
+
+                    .col-md-4
+                        
+                        .pl_image_post.skincolored_section.gradient-film-to-top.neutralize_links(style="background-image: url('./assets/images/spa/spa-figure-2.jpg')")
+                            .stretchy-wrapper.ratio_1-1
+                            a.pl_image_post_content.linkify(href="spa_blog_post.html")
+                                .section_header.elegant
+                                    h3 Why spa is priceless
+                                    p 5 June 2015
+                                .desc    
+                                    p Massage involves working and acting on the body with pressure – structured, unstructured...
+
+                    .col-md-4.margin_top_grid
+                        
+                        .pl_image_post.skincolored_section.gradient-film-to-top.neutralize_links(style="background-image: url('./assets/images/spa/spa-figure-3.jpg')")
+                            .stretchy-wrapper.ratio_1-1
+                            a.pl_image_post_content.linkify(href="spa_blog_post.html")
+                                .section_header.elegant
+                                    h3 Excelent salon
+                                    p 4 June 2015
+                                .desc    
+                                    p Massage involves working and acting on the body with pressure – structured, unstructured...                            
+                              
+
+        section.skincolored_section.transparent-film(style="background-image: url('./assets/images/spa/spa-section-bg.png'); background-repeat: repeat;background-size:initial")#testimonials
+          .container
+            .row
+              .col-md-8.col-md-offset-2.text-white
+                include templates/testimonial-slider-spa       
+        section#contact
+          .container
+            .row
+              .col-md-12
+                .section_header.fancy.centered
+                    h2 Contact
+                    p REACH US FOR BOOKING AN appointment
+            .row        
+              .col-md-8.col-md-offset-2
+                include templates/contact-quick-spa.jade
+                .pl_divider.vertical-divider
+                .section_header.centered
+                    h4 <strong> ...or find us on the map! </strong>
+            .row           
+              .col-md-12
+                 .map#map
+
+      // FOOTER
+      include templates/footer-spa
+    include templates/scripts

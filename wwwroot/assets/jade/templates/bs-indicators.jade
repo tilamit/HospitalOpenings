@@ -1,0 +1,64 @@
+section
+  .container
+    .row
+      .col-lg-12
+        .page-header
+          h1 Indicators
+      .col-lg-12
+        h2 Alerts
+        .bs-component
+          .alert.alert-dismissible.alert-warning
+            button.close(type='button', data-dismiss='alert') ×
+            h4 Warning!
+            p
+              | Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, 
+              a.alert-link(href='#') vel scelerisque nisl consectetur et
+              | .
+      .col-lg-4
+        .bs-component
+          .alert.alert-dismissible.alert-danger
+            button.close(type='button', data-dismiss='alert') ×
+            strong Oh snap!
+            a.alert-link(href='#') Change a few things up
+            |  and try submitting again.
+      .col-lg-4
+        .bs-component
+          .alert.alert-dismissible.alert-success
+            button.close(type='button', data-dismiss='alert') ×
+            strong Well done!
+            |  You successfully read 
+            a.alert-link(href='#') this important alert message
+            | .
+      .col-lg-4
+        .bs-component
+          .alert.alert-dismissible.alert-info
+            button.close(type='button', data-dismiss='alert') ×
+            strong Heads up!
+            |  This 
+            a.alert-link(href='#') alert needs your attention
+            | , but it's not super important.
+      .col-lg-4
+        h2 Badges
+        .bs-component
+          ul.nav.nav-pills
+            li.active
+              a(href='#')
+                | Home 
+                span.badge 42
+            li
+              a(href='#')
+                | Profile 
+                span.badge
+            li
+              a(href='#')
+                | Messages 
+                span.badge 3
+      .col-lg-4
+        h2 Labels
+        .bs-component
+          span.label.label-default Default
+          span.label.label-primary Primary
+          span.label.label-success Success
+          span.label.label-warning Warning
+          span.label.label-danger Danger
+          span.label.label-info Info

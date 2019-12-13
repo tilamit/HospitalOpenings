@@ -1,0 +1,43 @@
+@import 'style.less';
+
+@header-bgcolor         : transparent;
+@header-diagonal-gradient-left-area-color: @body-bg;
+@header-diagonal-gradient-right-area-color: transparent;//fade(#000000,30%);
+@header-txtcolor        : @text-color;
+
+@menu-item-vertical-padding: 35px;
+@menu-item-vertical-padding-md: 10px;
+@menu-item-vertical-padding-sm: 15px;
+
+body {margin-top: 0 !important;}
+
+.header {
+	border-bottom: solid 1px #cccccc;
+	.bgcolor_alpha(#000000 , @section-background-transparency);
+}
+
+.header .mainbar.gradient { background: linear-gradient(to right, @header-diagonal-gradient-left-area-color 0%,@header-diagonal-gradient-left-area-color 20%,@header-diagonal-gradient-right-area-color 20%,@header-diagonal-gradient-right-area-color 100%); }
+.header .mainbar.diagonal .container { background: linear-gradient(@diagonal-gradient-angle, @header-diagonal-gradient-left-area-color 0%,@header-diagonal-gradient-left-area-color @header-diagonal-gradient-left-area-percentage,transparent @header-diagonal-gradient-left-area-percentage - 1,transparent 100%); }
+
+.menu-dropdown {
+	.bgcolor_alpha(#000000 , @section-background-transparency) !important;
+}
+
+.menu_container ul.main_menu li {
+	background: transparent;
+}
+
+.stretchy-wrapper.ratio_slider {
+    padding-top: 10% !important;
+}
+
+/* =Responsive: Small devices (SM) Tablets (Mobile Menu) 
+-------------------------------------------------------------- */
+@media only screen and (max-width: 991px) {
+//------------------------------------------------------------
+
+.menu_container.collapsed {
+	.bgcolor_alpha(#000000 , @section-background-transparency);
+}
+
+}

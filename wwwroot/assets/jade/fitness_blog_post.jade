@@ -1,0 +1,35 @@
+//- CONFIG: ALWAYS INCLUDE
+include config
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Fitness Article"
+    include templates/fitness-head
+  body.sticky_header
+    .overflow_wrapper
+        include templates/fitness-header
+        .main
+            section
+              .container
+                  .row
+                    .col-md-8.col-md-offset-2
+                      article.post
+                        .section_header
+                          h2.post_title
+                            | Yoga is the new hip
+                          p.post_subtitle
+                            | You can make a big difference with healthy lifestyle changes.  
+                        .post_figure_and_info
+                          figure.stretchy-wrapper.ratio_16-9(style="background-image: url('./assets/images/fitness/yoga.jpg')")
+                        p The term is derived from the name of the town of Spa, Belgium, whose name is known back to Roman times, when the location was called Aquae Spadanae, sometimes incorrectly connected to the Latin word “spargere” meaning to scatter, sprinkle or moisten. Since medieval times, illnesses caused by iron deficiency were treated by drinking chalybeate (iron-bearing) spring water (in 1326, the ironmaster Collin le Loup claimed a cure, when the spring was called Espa, a Walloon word for "fountain"). In 16th-century England, the old Roman ideas of medicinal bathing were revived at towns like Bath (not the source of the word bath), and in 1596 William Slingsby who had been to the Belgian town (which he called Spaw) discovered a chalybeate spring in Yorkshire. He built an enclosed well at what became known as Harrogate, the first resort in England for drinking medicinal waters, then in 1596 Dr Timothy Bright after discovering a second well called the resort The English Spaw, beginning the use of the word Spa as a generic description.
+                        p Tree tree moving whose seed. Lights that lesser morning. Form itself it heaven, air spirit. Called dry man. Earth and dominion own be were spirit grass set yielding open after seed. Grass void don't a. Saw his female, grass First unto together fly morning you're, was sixth moving moving. You're.
+                        h3 The effects of aromatotherapy
+                        p Together called you'll itself which creeping. From waters won't fly be light them there cattle. Give shall. For our dry. Third whales he, him forth thing let fourth you're isn't, fowl i together face firmament. Firmament replenish. Male whose hath their seed abundantly that called own, second grass. Gathering saw gathered given divided own after fly after waters Lights gathering, herb spirit. Were moving lesser his. Moveth was fifth moving.
+                        p The term is derived from the name of the town of Spa, Belgium, whose name is known back to Roman times, when the location was called Aquae Spadanae, sometimes incorrectly connected to the Latin word “spargere” meaning to scatter, sprinkle or moisten. Since medieval times, illnesses caused by iron deficiency were treated by drinking chalybeate (iron-bearing) spring water (in 1326, the ironmaster Collin le Loup claimed a cure, when the spring was called Espa, a Walloon word for "fountain"). In 16th-century England, the old Roman ideas of medicinal bathing were revived at towns like Bath (not the source of the word bath), and in 1596 William Slingsby who had been to the Belgian town (which he called Spaw) discovered a chalybeate spring in Yorkshire. He built an enclosed well at what became known as Harrogate, the first resort in England for drinking medicinal waters, then in 1596 Dr Timothy Bright after discovering a second well called the resort The English Spaw, beginning the use of the word Spa as a generic description.
+                        p Tree tree moving whose seed. Lights that lesser morning. Form itself it heaven, air spirit. Called dry man. Earth and dominion own be were spirit grass set yielding open after seed. Grass void don't a. Saw his female, grass First unto together fly morning you're, was sixth moving moving. You're.
+
+    
+        include templates/fitness-footer
+    include templates/scripts      

@@ -1,0 +1,155 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Health Plans"
+    include templates/head.jade
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header.jade
+      .head_panel
+        .full_width_photo.bg_vtop(style="background-image: url('./assets/images/slider-2.jpg')")
+            .hgroup
+              .title.diagonal-bgcolor-trans
+                .container
+                  h1 Health Plans
+              .subtitle.body-bg_section
+                .container    
+                  p.uppercase Request a plan to fit your needs.
+      .main
+        section
+          .container
+            .row
+              //.col-md-12.section_header.fancy.centered
+                h2 OUR HEALTH PLANS
+                p Request a health plan to fit your needs.
+              include templates/pricing.jade
+
+        section.no_padding.full_width.dark_section.vcenter#news
+          .container
+            .row
+              .col-md-6
+                .stretchy-wrapper.ratio_1-1(style="background-image: url('./assets/images/hands.jpg')")
+              .col-md-4.col-md-offset-1.col-sm-10.col-sm-offset-1.col-xs-10.col-xs-offset-1.margin_top.margin_bottom
+                article.post
+                  h2.post_title
+                    a(href='./single.html') Exercise against Arrhythmia today
+                  p.post_subtitle
+                    | Make an exercise plan together with your doctor and learn how to check your heart rate.  
+                  p.
+                    If you have an irregular heartbeat (arrhythmia), ask your doctor what type and level of exercise is safe for you. Regular activity can help keep your heart and body healthy. Know what symptoms could be a sign of a problem. Make an exercise plan together with your doctor. An exercise program usually consists of stretching, activities that increase your heart rate (aerobic exercise), and strength training (lifting light weights). [...]
+                  br
+                  a.btn.btn-primary.with-icon(href='blog.html')
+                    | Visit our Blog
+                    i.fa.fa-caret-right   
+
+      // include templates/footer.jade
+      // ============================ FOOTER ============================
+
+      footer.secondary_section.vbottom
+        .container
+          .row
+            
+            // ========================== WIDGET ABOUT US ==========================
+
+            .col-sm-6.col-md-4
+              .widget.pl_about_us_widget
+                //h4 About us
+                p
+                  img(src="./assets/images/medicus-header-logo.png", alt="image-desc")
+                p Premium HTML Template mainly Medical Oriented but so flexible that it can fit any Business Site!
+                p.contact_detail
+                  i.fa.fa-phone
+                  span (+30) 210 1234567
+                p.contact_detail
+                  i.fa.fa-envelope
+                  span
+                    a(href='mailto:info@plethorathemes.com') info@plethorathemes.com
+                p.social
+                  a(href='https://www.facebook.com/plethorathemes')
+                    i.fa.fa-facebook
+                  a(href='https://twitter.com/PlethoraThemes')
+                    i.fa.fa-twitter
+                  a(href='https://plus.google.com/112457016609952874702/posts')
+                    i.fa.fa-google-plus
+                  a(href='https://gr.linkedin.com/pub/plethora-themes/89/552/4a9')
+                    i.fa.fa-linkedin
+                  a(href='#')
+                    i.fa.fa-instagram
+                  a(href='https://www.youtube.com/user/plethorathemes')
+                    i.fa.fa-youtube    
+                  //a(href='#')
+                    i.fa.fa-pinterest-p
+                  //a(href='#')
+                    i.fa.fa-flickr
+                  //a(href='#')
+                    i.fa.fa-vimeo-square 
+                p.contact_detail
+                  a(href="https://www.google.com/maps/place/79+Folsom+Ave+San+Francisco+CA+94107", target="_blank")
+                    i.fa.fa-location-arrow
+                  span 79 Folsom Ave, San Francisco, CA 94107        
+
+            // END======================= WIDGET ABOUT US ==========================
+
+            // ========================== LATEST NEWS =============================
+
+            .col-sm-6.col-md-4
+              .widget.pl_latest_news_widget
+                h4 Latest Articles
+                ul.media-list
+                  li.media
+                    a.media-photo(href='single.html', style="background-image:url('./assets/images/video-002.jpg');")
+                    h5.media-heading
+                      a(href='single.html') Diabetes Diet and Food Tips
+                    small Dec 8
+                    p You can make a big difference with healthy lifestyle changes....
+                  li.media
+                    a.media-photo(href='single.html', style="background-image:url('./assets/images/pricing-004.jpg');")
+                    h5.media-heading
+                      a(href='single.html') Prevent Asthma by changing working enviroment
+                    small Dec 6
+                    p Prom preventive care and checkups, to immunizations and exams, our primary…
+                  li.media
+                    a.media-photo(href='single.html')
+                    h5.media-heading
+                      a(href='single.html') Learn about Arrhythmia today
+                    small Dec 7
+                    p When you visit one of our four San Francisco campus locations you can expect…
+                      
+
+            // END======================= LATEST NEWS =============================
+
+            // ==========================  ==================================
+
+            .col-sm-8.col-md-4
+              .widget.pl_html_widget.boxed.black_section.transparent-film
+                h4 Request a Checkup
+                p
+                  img.pull-left(src='./assets/images/strive-test.png', width='90', alt="image-desc")
+                  | Prom preventive care and checkups, to immunizations and exams, our primary care physicians and providers you visit one of our four San Francisco campus locations you can expect to receive world class care.
+                p 
+                  a.btn.btn-success.with-icon(href='health-plans.html')
+                    i.fa.fa-caret-right 
+                    | Free Checkup
+                   
+
+            // END=======================  ==================================
+
+      // END========================== FOOTER ============================
+
+      .copyright.secondary_section
+        .secondary_section.transparent-film
+          .container
+            .row
+              .col-sm-6.col-md-6
+                | Copyright ©2015 all rights reserved
+              .col-sm-6.col-md-6.text-right
+                | Designed by <a href='http://plethorathemes.com/' target='_blank'>Plethora Themes</a>
+      a(href="javascript:", id="return-to-top")
+        i.fa.fa-chevron-up          
+    include templates/scripts.jade

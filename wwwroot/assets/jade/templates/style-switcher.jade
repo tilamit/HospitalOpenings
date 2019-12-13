@@ -1,0 +1,87 @@
+// Style Switcher, You propably want to remove this!
+script(type="text/javascript" src="./assets/js/_style-switcher.js")
+.style_switcher
+     .gear
+          i.fa.fa-gear
+     .styles
+          h6 Color Variations
+          ul.color_variations
+               li.style-default
+                    i.fa.fa-circle
+               li.style-silver
+                    i.fa.fa-circle
+               li.style-yellow
+                    i.fa.fa-circle
+               li.style-golden
+                    i.fa.fa-circle
+               li.style-purple
+                    i.fa.fa-circle                 
+          ul
+               li.style-onepage
+                    a(href="all-demos.html")
+                         i.fa.fa-desktop
+                         | ALL DEMOS PAGE
+          p
+          ul
+               li
+                    a(href="http://doc.plethorathemes.com/medicus-html/")
+                         i.fa.fa-flag
+                         | Documentation
+// END Style Switcher
+
+// DYNAMIC STYLE SWITCHER 
+script(type="text/style-switcher-template", id="style-switcher-template")
+     .section_style_switcher
+         .handler
+             i.fa.fa-wrench
+         .handler.downloader
+             i.fa.fa-download
+         .inner_area
+             .section_styles      
+                 h5 Section Classes                 
+                 a.color_section skincolored_section
+                 a.color_section secondary_section
+                 a.color_section dark_section
+                 a.color_section light_section
+                 a.color_section black_section
+                 a.color_section white_section                 
+                 a.color_section transparent
+                 hr
+                 a bgimage
+                 a transparent-film
+                 a gradient-film-to-top
+                 a gradient-film-to-bottom
+                 hr
+                 a gradient
+                 a gradient-invert
+                 hr
+                 a diagonal-30
+                 a diagonal-30-invert
+                 a diagonal-30-minusangle
+                 a diagonal-30-minusangle-invert
+                 hr
+                 a diagonal-50
+                 a diagonal-50-invert
+                 a diagonal-50-minusangle
+                 a diagonal-50-minusangle-invert
+                 hr
+                 a diagonal-70
+                 a diagonal-70-invert
+                 a diagonal-70-minusangle
+                 a diagonal-70-minusangle-invert            
+                 hr
+                 a no_padding
+                 a no_top_padding
+                 a no_bottom_padding
+                 a no_cols_padding
+                 a full_width
+                 a vcenter 
+                 a vbottom
+                 hr
+                 a full_height
+                 a vertical_center
+                 a vertical_bottom
+                 hr
+                 a elevate
+
+// END DYNAMIC STYLE SWITCHER 

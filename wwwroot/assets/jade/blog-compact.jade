@@ -1,0 +1,35 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var appointmentForm = true  
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Blog Compact"
+    include templates/head
+  body.sticky_header
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .skincolored_section
+            .hgroup
+              .title
+                .container
+                  h1 The Blog Compact
+              .subtitle.dark_section.transparent-film
+                .container    
+                  p.uppercase Medical Articles &amp; News
+      .main
+        section
+          .container
+              .row
+                .col-sm-8.col-md-8
+                  include templates/post-grid-compact
+                .col-sm-4.col-md-4
+                  include templates/sidebar
+      include templates/footer
+    include templates/scripts

@@ -1,0 +1,51 @@
+//-====================================
+//- CONFIG: ALWAYS INCLUDE
+include config
+//- CONFIG-OVERRIDES: Per-page Settings
+- var appointmentForm = true
+//-====================================
+
+doctype html
+html(lang="en")
+  head
+    block variables
+      - var title = "Blog"
+    include templates/head
+  body
+    .overflow_wrapper
+      include templates/header
+      .head_panel
+        .full_width_photo(style="background-image: url('./assets/images/slider-7.jpg')")
+            .hgroup.fancy
+              .title.black_section.transparent
+                .container
+                  h1 The Blog
+              .subtitle.black_section.transparent-film
+                .container    
+                  p.uppercase Medical Articles &amp; News
+      .main
+        section
+          .container
+              .row
+                .col-sm-8.col-md-8
+                  include templates/post-grid-classic
+                  section.centered
+                    ul.pagination
+                      li.disabled
+                        a(href='#') «
+                      li.active
+                        a(href='#') 1
+                      li
+                        a(href='#') 2
+                      li
+                        a(href='#') 3
+                      li
+                        a(href='#') 4
+                      li
+                        a(href='#') 5
+                      li
+                        a(href='#') »
+                .col-sm-4.col-md-4
+                  include templates/sidebar
+      include templates/footer
+    include templates/scripts
